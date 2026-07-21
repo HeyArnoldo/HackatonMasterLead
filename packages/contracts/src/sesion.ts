@@ -94,6 +94,50 @@ export const contenidoSesionSchema = z.object({
 });
 export type ContenidoSesion = z.infer<typeof contenidoSesionSchema>;
 
+/** Resumen de sesión para el listado del docente (`GET /api/sesiones`). */
+export const sesionResumenSchema = z.object({
+  id: z.uuid(),
+  /** Título de la sesión, tomado de `contenidoJson.titulo` (null si aún no hay contenido). */
+  titulo: z.string().nullable(),
+  /** Nombre del área curricular (null si la sesión no la resolvió). */
+  area: z.string().nullable(),
+  grados: z.array(z.number().int()),
+  estado: z.enum(EstadoSesion),
+  createdAt: z.string(),
+});
+export type SesionResumen = z.infer<typeof sesionResumenSchema>;
+
+/** Detalle completo de una sesión para el editor (`GET /api/sesiones/:id`). */
+export const sesionDetalleSchema = z.object({
+  id: z.uuid(),
+  titulo: z.string().nullable(),
+  area: z.string().nullable(),
+  areaId: z.uuid().nullable(),
+  grados: z.array(z.number().int()),
+  competenciaIds: z.array(z.uuid()),
+  lengua: z.string(),
+  contexto: z.string().nullable(),
+  estado: z.enum(EstadoSesion),
+  contenidoJson: contenidoSesionSchema.nullable(),
+  createdAt: z.string(),
+  updatedAt: z.string(),
+});
+export type SesionDetalle = z.infer<typeof sesionDetalleSchema>;
+
+/**
+ * Body de `PATCH /api/sesiones/:id` — actualiza el contenido y/o el estado
+ * (borrador → final) desde el editor. Debe traer al menos uno de los dos.
+ */
+export const actualizarSesionInputSchema = z
+  .object({
+    contenidoJson: contenidoSesionSchema.optional(),
+    estado: z.enum(EstadoSesion).optional(),
+  })
+  .refine((v) => v.contenidoJson !== undefined || v.estado !== undefined, {
+    message: 'Debes enviar contenidoJson y/o estado.',
+  });
+export type ActualizarSesionInput = z.infer<typeof actualizarSesionInputSchema>;
+
 export const sesionAprendizajeSchema = z.object({
   id: z.uuid(),
   docenteId: z.uuid(),

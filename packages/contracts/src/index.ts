@@ -3,4 +3,5 @@ export * from './auth';
 export * from './curriculum';
 export * from './escuela';
 export * from './sesion';
+export * from './copiloto';
 export * from './material';

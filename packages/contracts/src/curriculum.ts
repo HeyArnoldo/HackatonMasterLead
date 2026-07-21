@@ -30,6 +30,26 @@ export const capacidadSchema = z.object({
 });
 export type Capacidad = z.infer<typeof capacidadSchema>;
 
+/** Capacidad resumida para el árbol de competencias del frontend. */
+export const capacidadResumenSchema = z.object({
+  id: z.uuid(),
+  codigo: z.string(),
+  nombre: z.string(),
+});
+export type CapacidadResumen = z.infer<typeof capacidadResumenSchema>;
+
+/** Competencia con sus capacidades (respuesta de `GET /api/curriculo/competencias`). */
+export const competenciaConCapacidadesSchema = competenciaSchema.extend({
+  capacidades: z.array(capacidadResumenSchema),
+});
+export type CompetenciaConCapacidades = z.infer<typeof competenciaConCapacidadesSchema>;
+
+/** Query de `GET /api/curriculo/competencias?area=...`. */
+export const competenciasQuerySchema = z.object({
+  area: z.string().min(1),
+});
+export type CompetenciasQuery = z.infer<typeof competenciasQuerySchema>;
+
 export const estandarSchema = z.object({
   id: z.uuid(),
   competenciaId: z.uuid(),

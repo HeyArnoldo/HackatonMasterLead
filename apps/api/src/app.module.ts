@@ -12,6 +12,7 @@ import { SesionesModule } from './sesiones/sesiones.module';
 import { MaterialesModule } from './materiales/materiales.module';
 import { GenerationAuditModule } from './generation-audit/generation-audit.module';
 import { AgentModule } from './agent/agent.module';
+import { CopilotoModule } from './copiloto/copiloto.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { AgentModule } from './agent/agent.module';
     MaterialesModule,
     GenerationAuditModule,
     AgentModule,
+    CopilotoModule,
   ],
 })
 export class AppModule {}

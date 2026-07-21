@@ -1,5 +1,5 @@
 import { createOpenAI } from '@ai-sdk/openai';
-import type { LanguageModel } from 'ai';
+import type { LanguageModel, TranscriptionModel } from 'ai';
 
 /**
  * Proveedor de IA — OpenAI directo (NO Azure).
@@ -27,4 +27,17 @@ function provider() {
 /** Modelo del agente (razonamiento + tools). */
 export function agentModel(): LanguageModel {
   return provider()(agentModelName());
+}
+
+/** Nombre del modelo de transcripción de voz. Configurable por env. */
+export function transcriptionModelName(): string {
+  return process.env.OPENAI_TRANSCRIBE_MODEL ?? 'gpt-4o-transcribe';
+}
+
+/**
+ * Modelo de transcripción de voz (whisper-1 / gpt-4o-transcribe) — OpenAI directo.
+ * Se resuelve con la misma clave `OPENAI_API_KEY`; gateado por `isAiEnabled()`.
+ */
+export function transcriptionModel(): TranscriptionModel {
+  return provider().transcription(transcriptionModelName());
 }

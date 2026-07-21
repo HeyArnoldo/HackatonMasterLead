@@ -11,6 +11,7 @@ import { EscuelasModule } from './escuelas/escuelas.module';
 import { SesionesModule } from './sesiones/sesiones.module';
 import { MaterialesModule } from './materiales/materiales.module';
 import { GenerationAuditModule } from './generation-audit/generation-audit.module';
+import { AgentModule } from './agent/agent.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { GenerationAuditModule } from './generation-audit/generation-audit.modul
     SesionesModule,
     MaterialesModule,
     GenerationAuditModule,
+    AgentModule,
   ],
 })
 export class AppModule {}

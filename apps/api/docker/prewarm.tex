@@ -1,0 +1,23 @@
+% Documento de pre-caldeo (build-time): fuerza a Tectonic a descargar en la
+% cache de la imagen TODOS los paquetes LaTeX que usan las plantillas de Yachai
+% (sesión y evaluación). Así el primer PDF en runtime NO baja nada de la red.
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noquoting]{babel}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\setlist{nosep,leftmargin=1.4em}
+\setlength{\parindent}{0pt}
+\begin{document}
+\section*{Pre-caldeo de Yachai}
+\subsection*{Momento}
+Texto de prueba con \textbf{negrita}, \textit{cursiva}, 1.\textsuperscript{o} grado y guion \textemdash{} largo.
+\begin{itemize}
+  \item Ítem uno con acentos: educación, evaluación, sesión.
+  \item Ítem dos.
+\end{itemize}
+\hrule
+\end{document}

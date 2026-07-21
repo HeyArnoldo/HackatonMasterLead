@@ -23,6 +23,28 @@ RUN pnpm --filter @app/contracts build && pnpm --filter @app/api build
 # ── Stage 2: runtime ──────────────────────────────────────────────
 FROM base AS runtime
 ENV NODE_ENV=production
+# Cache de Tectonic con ruta fija: se pre-caldea en el build y se reusa en runtime.
+ENV TECTONIC_CACHE_DIR=/var/cache/tectonic
+
+# Motor LaTeX → PDF: binario ESTÁTICO de Tectonic (self-contained, musl) que
+# coincide con la arquitectura de la imagen. Luego se PRE-CALDEA la cache
+# compilando un .tex de muestra en el build, de modo que el primer PDF en
+# runtime no dependa de descargas (evita lentitud/flakiness en Coolify).
+ARG TECTONIC_VERSION=0.16.9
+RUN apk add --no-cache ca-certificates \
+ && ARCH="$(uname -m)" \
+ && case "$ARCH" in \
+      x86_64) TARGET=x86_64-unknown-linux-musl ;; \
+      aarch64) TARGET=aarch64-unknown-linux-musl ;; \
+      *) echo "arquitectura no soportada para tectonic: $ARCH" && exit 1 ;; \
+    esac \
+ && wget -qO /tmp/tectonic.tar.gz "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%40${TECTONIC_VERSION}/tectonic-${TECTONIC_VERSION}-${TARGET}.tar.gz" \
+ && tar -xzf /tmp/tectonic.tar.gz -C /usr/local/bin tectonic \
+ && rm -f /tmp/tectonic.tar.gz \
+ && tectonic --version
+COPY apps/api/docker/prewarm.tex /tmp/prewarm.tex
+RUN tectonic /tmp/prewarm.tex --outdir /tmp --chatter minimal --untrusted \
+ && rm -f /tmp/prewarm.tex /tmp/prewarm.pdf
 
 # Reinstala solo deps de producción preservando el layout del workspace
 # (los symlinks de pnpm son relativos: funcionan dentro de la imagen).

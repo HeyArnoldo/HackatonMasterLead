@@ -63,6 +63,17 @@ export class SesionGeneratorService {
       '',
       'FLUJO: (1) buscar_curriculo → (2) obtener_desempenos → (3) buscar_recursos_contexto → (4) redactar la sesión.',
       '',
+      // Guía de estilo compacta derivada de sesiones REALES de aula peruana (few-shot estructural, no contenido):
+      'GUÍA DE ESTILO (basada en sesiones reales de aula):',
+      '- El propósito arranca con "Los estudiantes ..." y describe lo que logran + para qué.',
+      '- INICIO: saludo/bienvenida, recojo de saberes previos y problematización con preguntas abiertas',
+      '  (¿Qué observamos? ¿Qué sabemos? ¿Cómo se relaciona con nuestra comunidad?).',
+      '- DESARROLLO (proceso): gestión y acompañamiento; actividades concretas con material del entorno,',
+      '  trabajo guiado y luego autónomo; retroalimentación para la mejora del aprendizaje.',
+      '- CIERRE: metacognición con preguntas (¿Qué hicimos? ¿Cómo me sentí? ¿Para qué me sirve?).',
+      '- La evidencia es un PRODUCTO observable (ficha, cartel, maqueta, exposición) evaluable con lista de cotejo/rúbrica.',
+      '- Redacta actividades claras, en pasos, con verbos de acción; contextualiza a la Amazonía (chacra, río, comunidad).',
+      '',
       'SALIDA: responde ÚNICAMENTE con un objeto JSON válido (sin texto adicional, sin markdown, sin ```).',
       'El JSON debe tener EXACTAMENTE esta forma:',
       JSON.stringify(

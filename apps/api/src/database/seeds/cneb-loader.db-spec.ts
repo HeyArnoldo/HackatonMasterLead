@@ -5,7 +5,7 @@ import { Competencia } from '../../curriculum/competencia.entity';
 import { Capacidad } from '../../curriculum/capacidad.entity';
 import { Estandar } from '../../curriculum/estandar.entity';
 import { Desempeno } from '../../curriculum/desempeno.entity';
-import { DEFAULT_CNEB_DIR, loadCnebFromDir } from './cneb-loader';
+import { CnebAreaInput, DEFAULT_CNEB_DIR, loadCnebFromData, loadCnebFromDir } from './cneb-loader';
 
 /**
  * Prueba de integración: requiere Postgres (pgvector) arriba.
@@ -55,6 +55,27 @@ describe('CNEB loader (idempotencia)', () => {
   });
 
   it('marca needsReview los desempeños con codigo null', async () => {
+    // Auto-contenida: NO depende del seed real (que no trae filas needs-review).
+    // Carga un fixture mínimo con un desempeño de codigo:null y verifica que se
+    // marque como needsReview (no citable por el Verificador).
+    const fixture: CnebAreaInput[] = [
+      {
+        area: 'Área de prueba needsReview',
+        competencias: [
+          {
+            codigo: 'TEST-NR-C1',
+            nombre: 'Competencia de prueba',
+            desempenos: [
+              { grado: 1, codigo: null, descripcion: 'Desempeño sin código (requiere revisión)' },
+            ],
+          },
+        ],
+      },
+    ];
+
+    const res = await loadCnebFromData(dataSource, fixture);
+    expect(res.desempenosNeedsReview).toBeGreaterThanOrEqual(1);
+
     const repo = dataSource.getRepository(Desempeno);
     const sinCodigo = await repo.count({ where: { needsReview: true } });
     expect(sinCodigo).toBeGreaterThanOrEqual(1);

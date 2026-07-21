@@ -39,6 +39,10 @@ export const envSchema = z.object({
   ADMIN_EMAIL: z.string().optional(),
   ADMIN_PASSWORD: z.string().optional(),
   ADMIN_NAME: z.string().optional(),
+
+  // IA (OpenAI directo). Opcional: sin OPENAI_API_KEY la generación responde 503.
+  OPENAI_API_KEY: z.string().optional(),
+  OPENAI_MODEL: z.string().optional(),
 });
 
 export type Env = z.infer<typeof envSchema>;

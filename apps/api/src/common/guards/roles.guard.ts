@@ -17,7 +17,12 @@ export class RolesGuard implements CanActivate {
     if (!required || required.length === 0) return true;
 
     const { user } = ctx.switchToHttp().getRequest<{ user?: User }>();
-    if (!user || !required.includes(user.role)) {
+    if (!user) {
+      throw new ForbiddenException('No tienes permisos para esta acción');
+    }
+    // El admin es superusuario: pasa cualquier verificación de rol.
+    if (user.role === UserRole.ADMIN) return true;
+    if (!required.includes(user.role)) {
       throw new ForbiddenException('No tienes permisos para esta acción');
     }
     return true;

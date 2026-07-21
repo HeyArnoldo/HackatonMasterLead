@@ -3,6 +3,8 @@ import { z } from 'zod';
 export enum UserRole {
   ADMIN = 'admin',
   USER = 'user',
+  DOCENTE = 'docente',
+  DIRECTOR = 'director',
 }
 
 export const registerSchema = z.object({

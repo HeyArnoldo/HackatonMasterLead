@@ -1,8 +1,6 @@
 import type { ReactNode } from 'react';
-import { BookOpenIcon, LayersIcon, TargetIcon } from 'lucide-react';
+import { LayersIcon } from 'lucide-react';
 import { EstadoSesion, type ContenidoSesion, type Momento } from '@app/contracts';
-import { Badge } from '@/components/ui/badge';
-import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
 
 const MOMENTO_LABEL: Record<string, string> = {
@@ -11,35 +9,63 @@ const MOMENTO_LABEL: Record<string, string> = {
   cierre: 'Cierre',
 };
 
-/** Chip para el código oficial del desempeño — el diferenciador visual clave. */
-function CodigoBadge({ codigo }: { codigo: string }) {
+/**
+ * Chip prominente para el código oficial del desempeño — el diferenciador
+ * visual clave del producto. Pill verde sólida, mono, siempre visible.
+ */
+function CodigoBadge({ codigo, className }: { codigo: string; className?: string }) {
   return (
-    <span className="inline-flex items-center rounded-md border border-amber-300 bg-amber-50 px-1.5 py-0.5 font-mono text-[11px] font-semibold text-amber-800 dark:border-amber-500/40 dark:bg-amber-500/10 dark:text-amber-300">
+    <span
+      className={cn(
+        'inline-flex items-center rounded-md bg-primary px-2 py-0.5 font-mono text-[11px] font-bold tracking-tight text-primary-foreground',
+        className,
+      )}
+    >
       {codigo}
     </span>
   );
 }
 
-function SectionTitle({ icon, children }: { icon: ReactNode; children: ReactNode }) {
+/** Etiqueta eyebrow del diseño: 11px, bold, uppercase, verde o muted. */
+function Eyebrow({ children, tone = 'muted' }: { children: ReactNode; tone?: 'muted' | 'green' }) {
   return (
-    <h4 className="flex items-center gap-2 text-sm font-semibold text-foreground">
-      {icon}
+    <p
+      className={cn(
+        'text-[11px] font-bold uppercase tracking-[0.05em]',
+        tone === 'green' ? 'text-primary' : 'text-muted-foreground',
+      )}
+    >
       {children}
-    </h4>
+    </p>
+  );
+}
+
+/** Tarjeta blanca redondeada del diseño (border #e3e9e1, radio 14). */
+function WhiteCard({ children, className }: { children: ReactNode; className?: string }) {
+  return (
+    <div className={cn('rounded-[14px] border border-border bg-card p-5', className)}>
+      {children}
+    </div>
+  );
+}
+
+function Chip({ children }: { children: ReactNode }) {
+  return (
+    <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
+      {children}
+    </span>
   );
 }
 
 function MomentoBlock({ momento }: { momento: Momento }) {
   return (
-    <div className="rounded-lg border bg-muted/20 p-3">
+    <div className="rounded-[10px] border border-border bg-background/60 p-4">
       <div className="mb-2 flex items-center justify-between gap-2">
         <span className="text-sm font-semibold">
           {MOMENTO_LABEL[momento.nombre] ?? momento.nombre}
         </span>
         {momento.tiempo && (
-          <Badge variant="outline" className="font-normal">
-            {momento.tiempo}
-          </Badge>
+          <span className="text-xs font-medium text-muted-foreground">{momento.tiempo}</span>
         )}
       </div>
 
@@ -54,9 +80,9 @@ function MomentoBlock({ momento }: { momento: Momento }) {
       {momento.actividadesPorGrado.length > 0 && (
         <div className="mt-2 space-y-2">
           {momento.actividadesPorGrado.map((g, i) => (
-            <div key={i} className="rounded-md border bg-background p-2">
+            <div key={i} className="rounded-[10px] border border-border bg-card p-3">
               <div className="mb-1">
-                <Badge variant="secondary">{g.grado}° grado</Badge>
+                <Chip>{g.grado}° grado</Chip>
               </div>
               <ul className="list-disc space-y-1 pl-5 text-sm">
                 {g.actividades.map((a, j) => (
@@ -82,15 +108,16 @@ export type SesionArtifactProps = {
   estado?: EstadoSesion;
   /** Contenido extra en el encabezado (acciones, avisos). */
   header?: ReactNode;
-  /** Pie de la tarjeta (acciones de guardar/finalizar). */
+  /** Pie del bloque (acciones de guardar/editar). */
   footer?: ReactNode;
   className?: string;
 };
 
 /**
- * Tarjeta rica de una sesión de aprendizaje (forma `contenidoSesionSchema`).
- * Muestra el código oficial de cada desempeño de forma prominente y agrupa las
- * actividades por grado en el caso multigrado.
+ * Vista de sesión de aprendizaje con el look del diseño: eyebrow (ÁREA · GRADO ·
+ * MIN), título grande y tarjetas blancas redondeadas. Muestra el código oficial
+ * de cada desempeño de forma prominente y agrupa actividades por grado en
+ * multigrado. El id `printable-session` habilita "Exportar PDF" vía impresión.
  */
 export function SesionArtifact({
   contenido,
@@ -101,97 +128,89 @@ export function SesionArtifact({
 }: SesionArtifactProps) {
   const { datosInformativos: d } = contenido;
   const esMultigrado = d.grados.length > 1;
+  const grados = d.grados.map((g) => `${g}°`).join(' y ');
+  const eyebrow = [d.area, grados, d.duracion].filter(Boolean).join(' · ');
 
   return (
-    <div
-      className={cn('overflow-hidden rounded-xl border bg-card text-card-foreground', className)}
-    >
+    <div id="printable-session" className={cn('space-y-4', className)}>
       {/* Encabezado */}
-      <div className="border-b bg-muted/30 p-4">
-        <div className="flex items-start justify-between gap-3">
-          <div className="min-w-0">
-            <div className="mb-1 flex flex-wrap items-center gap-2">
-              <Badge className="gap-1">
-                <BookOpenIcon className="size-3" />
-                Sesión de aprendizaje
-              </Badge>
-              {estado && (
-                <Badge variant={estado === EstadoSesion.FINAL ? 'default' : 'secondary'}>
-                  {estado === EstadoSesion.FINAL ? 'Final' : 'Borrador'}
-                </Badge>
+      <div>
+        <div className="mb-2 flex flex-wrap items-center gap-2">
+          <Eyebrow tone="green">{eyebrow}</Eyebrow>
+          {estado && (
+            <span
+              className={cn(
+                'inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-semibold',
+                estado === EstadoSesion.FINAL
+                  ? 'bg-primary text-primary-foreground'
+                  : 'bg-secondary text-secondary-foreground',
               )}
-              {esMultigrado && (
-                <Badge variant="outline" className="gap-1">
-                  <LayersIcon className="size-3" />
-                  Multigrado
-                </Badge>
-              )}
-            </div>
-            <h3 className="text-base font-semibold leading-tight">{contenido.titulo}</h3>
-          </div>
+            >
+              {estado === EstadoSesion.FINAL ? 'Final' : 'Borrador'}
+            </span>
+          )}
+          {esMultigrado && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-0.5 text-[11px] font-semibold text-secondary-foreground">
+              <LayersIcon className="size-3" /> Multigrado
+            </span>
+          )}
+        </div>
+        <h1 className="text-2xl font-bold leading-tight tracking-tight">{contenido.titulo}</h1>
+        <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted-foreground">
+          <span>
+            Área: <strong className="text-foreground">{d.area}</strong>
+          </span>
+          <span>
+            Grados: <strong className="text-foreground">{grados}</strong>
+          </span>
+          <span>
+            Lengua: <strong className="text-foreground">{d.lengua}</strong>
+          </span>
+          {d.duracion && (
+            <span>
+              Duración: <strong className="text-foreground">{d.duracion}</strong>
+            </span>
+          )}
         </div>
         {header}
       </div>
 
-      <div className="space-y-4 p-4">
-        {/* Datos informativos */}
-        <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm">
-          <span>
-            <span className="text-muted-foreground">Área:</span> <strong>{d.area}</strong>
-          </span>
-          <span>
-            <span className="text-muted-foreground">Grados:</span>{' '}
-            <strong>{d.grados.map((g) => `${g}°`).join(', ')}</strong>
-          </span>
-          <span>
-            <span className="text-muted-foreground">Lengua:</span> <strong>{d.lengua}</strong>
-          </span>
-          {d.duracion && (
-            <span>
-              <span className="text-muted-foreground">Duración:</span> <strong>{d.duracion}</strong>
-            </span>
-          )}
-        </div>
+      {/* Propósito general */}
+      {contenido.propositoGeneral && (
+        <WhiteCard>
+          <Eyebrow>Propósito de la sesión</Eyebrow>
+          <p className="mt-2 text-sm leading-relaxed">{contenido.propositoGeneral}</p>
+        </WhiteCard>
+      )}
 
-        {contenido.propositoGeneral && (
-          <p className="rounded-lg bg-muted/40 p-3 text-sm">{contenido.propositoGeneral}</p>
-        )}
-
-        <Separator />
-
-        {/* Propósitos de aprendizaje */}
-        <div className="space-y-3">
-          <SectionTitle icon={<TargetIcon className="size-4 text-muted-foreground" />}>
-            Propósitos de aprendizaje
-          </SectionTitle>
+      {/* Propósitos de aprendizaje (competencia + desempeños con código) */}
+      <WhiteCard>
+        <Eyebrow>Propósitos de aprendizaje</Eyebrow>
+        <div className="mt-3 space-y-4">
           {contenido.propositosAprendizaje.map((p, i) => (
-            <div key={i} className="rounded-lg border p-3">
+            <div key={i} className="border-l-2 border-primary/40 pl-3">
               <div className="flex flex-wrap items-center gap-2">
                 <CodigoBadge codigo={p.competenciaCodigo} />
-                <span className="text-sm font-medium">{p.competenciaNombre}</span>
+                <span className="text-sm font-semibold">{p.competenciaNombre}</span>
               </div>
 
               {p.capacidades.length > 0 && (
                 <div className="mt-2 flex flex-wrap gap-1.5">
                   {p.capacidades.map((c, j) => (
-                    <Badge key={j} variant="outline" className="font-normal">
-                      {c}
-                    </Badge>
+                    <Chip key={j}>{c}</Chip>
                   ))}
                 </div>
               )}
 
               <div className="mt-3 space-y-2">
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
-                  Desempeños
-                </p>
+                <Eyebrow>Desempeños</Eyebrow>
                 {p.desempenos.map((des, j) => (
-                  <div key={j} className="flex gap-2 text-sm">
+                  <div key={j} className="flex gap-2.5 text-sm">
                     <div className="flex shrink-0 flex-col items-start gap-1">
                       <CodigoBadge codigo={des.codigo} />
-                      <Badge variant="secondary" className="text-[10px]">
+                      <span className="text-[10px] font-medium text-muted-foreground">
                         {des.grado}° grado
-                      </Badge>
+                      </span>
                     </div>
                     <p className="leading-snug">{des.descripcion}</p>
                   </div>
@@ -204,51 +223,43 @@ export function SesionArtifact({
             </div>
           ))}
         </div>
+      </WhiteCard>
 
-        {contenido.enfoquesTransversales.length > 0 && (
-          <div className="space-y-1.5">
-            <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
-              Enfoques transversales
-            </p>
-            <div className="flex flex-wrap gap-1.5">
-              {contenido.enfoquesTransversales.map((e, i) => (
-                <Badge key={i} variant="outline" className="font-normal">
-                  {e}
-                </Badge>
-              ))}
-            </div>
-          </div>
-        )}
-
-        <Separator />
-
-        {/* Momentos */}
-        <div className="space-y-2">
-          <SectionTitle icon={<LayersIcon className="size-4 text-muted-foreground" />}>
-            Secuencia didáctica
-          </SectionTitle>
-          <div className="space-y-2">
-            {contenido.momentos.map((m, i) => (
-              <MomentoBlock key={i} momento={m} />
+      {/* Enfoques transversales */}
+      {contenido.enfoquesTransversales.length > 0 && (
+        <WhiteCard>
+          <Eyebrow>Enfoques transversales</Eyebrow>
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {contenido.enfoquesTransversales.map((e, i) => (
+              <Chip key={i}>{e}</Chip>
             ))}
           </div>
+        </WhiteCard>
+      )}
+
+      {/* Secuencia didáctica (momentos) */}
+      <WhiteCard>
+        <Eyebrow>Secuencia didáctica</Eyebrow>
+        <div className="mt-3 space-y-2.5">
+          {contenido.momentos.map((m, i) => (
+            <MomentoBlock key={i} momento={m} />
+          ))}
         </div>
+      </WhiteCard>
 
-        {contenido.materiales.length > 0 && (
-          <div className="space-y-1.5">
-            <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
-              Materiales
-            </p>
-            <ul className="list-disc space-y-1 pl-5 text-sm">
-              {contenido.materiales.map((m, i) => (
-                <li key={i}>{m}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
+      {/* Materiales y recursos */}
+      {contenido.materiales.length > 0 && (
+        <WhiteCard>
+          <Eyebrow>Materiales y recursos</Eyebrow>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
+            {contenido.materiales.map((m, i) => (
+              <li key={i}>{m}</li>
+            ))}
+          </ul>
+        </WhiteCard>
+      )}
 
-      {footer && <div className="border-t bg-muted/20 p-4">{footer}</div>}
+      {footer && <div className="pt-1">{footer}</div>}
     </div>
   );
 }

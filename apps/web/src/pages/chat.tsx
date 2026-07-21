@@ -7,16 +7,12 @@ import {
   ArrowUpIcon,
   Loader2Icon,
   MicIcon,
+  PaperclipIcon,
   SparklesIcon,
   SquareIcon,
   TriangleAlertIcon,
 } from 'lucide-react';
-import {
-  contenidoSesionSchema,
-  EstadoSesion,
-  type ContenidoSesion,
-  type MensajeResumen,
-} from '@app/contracts';
+import { contenidoSesionSchema, type ContenidoSesion, type MensajeResumen } from '@app/contracts';
 import {
   Conversation,
   ConversationContent,
@@ -26,10 +22,10 @@ import {
 import { Message, MessageContent, Response } from '@/components/ai-elements/message';
 import { Reasoning } from '@/components/ai-elements/reasoning';
 import { Tool } from '@/components/ai-elements/tool';
-import { SesionArtifact } from '@/components/sesion-artifact';
-import { Button } from '@/components/ui/button';
+import { SessionCard } from '@/components/session-card';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Textarea } from '@/components/ui/textarea';
+import { cn } from '@/lib/utils';
 import { useVoiceRecorder } from '@/hooks/use-voice-recorder';
 import { copilotoApi, chatEndpoint } from '@/services/copiloto.api';
 import { api } from '@/lib/api';
@@ -82,18 +78,7 @@ function PartsView({ parts, streaming }: { parts: UIMessage['parts']; streaming:
             const output = tp.output as ProponerOutput | undefined;
             const contenido = sesionDePropuesta(tp.input);
             if (tp.state === 'output-available' && output?.ok && contenido) {
-              return (
-                <SesionArtifact
-                  key={i}
-                  contenido={contenido}
-                  estado={EstadoSesion.BORRADOR}
-                  header={
-                    <p className="mt-2 text-xs text-muted-foreground">
-                      Guardada como borrador. Revísala en <strong>Mis sesiones</strong>.
-                    </p>
-                  }
-                />
-              );
+              return <SessionCard key={i} contenido={contenido} sesionId={output.sesionId} />;
             }
             if (tp.state === 'output-available' && output && !output.ok) {
               return (
@@ -242,54 +227,80 @@ function ChatThread({
       )}
 
       {/* Barra de entrada */}
-      <div className="border-t bg-background/80 backdrop-blur">
+      <div className="bg-background px-4 pb-4">
         <form
           onSubmit={(e) => {
             e.preventDefault();
             void handleSend(input);
           }}
-          className="mx-auto flex w-full max-w-3xl items-end gap-2 p-3"
+          className="mx-auto w-full max-w-3xl"
         >
-          <Textarea
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                void handleSend(input);
+          <div className="flex items-end gap-2 rounded-[18px] border border-border bg-card p-2 pl-3 shadow-sm">
+            <button
+              type="button"
+              title="Adjuntar (próximamente)"
+              className="mb-1 flex size-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-secondary"
+            >
+              <PaperclipIcon className="size-[18px]" />
+            </button>
+            <Textarea
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  void handleSend(input);
+                }
+              }}
+              placeholder={
+                voice.status === 'recording'
+                  ? 'Escuchando… habla y presiona el micrófono para terminar'
+                  : 'Genérame una sesión sobre…'
               }
-            }}
-            placeholder={
-              voice.status === 'recording'
-                ? 'Escuchando… habla y presiona el micrófono para terminar'
-                : 'Escribe tu mensaje o usa el micrófono…'
-            }
-            rows={1}
-            className="max-h-40 min-h-11 flex-1 resize-none"
-          />
-          <Button
-            type="button"
-            size="icon"
-            variant={voice.status === 'recording' ? 'destructive' : 'outline'}
-            onClick={voice.toggle}
-            disabled={voice.status === 'transcribing'}
-            title="Dictar por voz"
-          >
-            {voice.status === 'transcribing' ? (
-              <Loader2Icon className="size-4 animate-spin" />
+              rows={1}
+              className="max-h-40 min-h-9 flex-1 resize-none border-0 bg-transparent px-0 py-1.5 shadow-none focus-visible:ring-0 dark:bg-transparent"
+            />
+            <button
+              type="button"
+              onClick={voice.toggle}
+              disabled={voice.status === 'transcribing'}
+              title="Dictar por voz"
+              className={cn(
+                'mb-0.5 flex size-9 shrink-0 items-center justify-center rounded-full transition-colors',
+                voice.status === 'recording'
+                  ? 'bg-destructive text-white'
+                  : 'text-muted-foreground hover:bg-secondary',
+              )}
+            >
+              {voice.status === 'transcribing' ? (
+                <Loader2Icon className="size-[18px] animate-spin" />
+              ) : (
+                <MicIcon className="size-[18px]" />
+              )}
+            </button>
+            {busy ? (
+              <button
+                type="button"
+                onClick={stop}
+                title="Detener"
+                className="mb-0.5 flex size-9 shrink-0 items-center justify-center rounded-full bg-secondary text-primary"
+              >
+                <SquareIcon className="size-4" />
+              </button>
             ) : (
-              <MicIcon className="size-4" />
+              <button
+                type="submit"
+                disabled={!input.trim()}
+                title="Enviar"
+                className="mb-0.5 flex size-9 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-40"
+              >
+                <ArrowUpIcon className="size-[18px]" />
+              </button>
             )}
-          </Button>
-          {busy ? (
-            <Button type="button" size="icon" variant="secondary" onClick={stop} title="Detener">
-              <SquareIcon className="size-4" />
-            </Button>
-          ) : (
-            <Button type="submit" size="icon" disabled={!input.trim()} title="Enviar">
-              <ArrowUpIcon className="size-4" />
-            </Button>
-          )}
+          </div>
+          <p className="mt-2 text-center text-[11px] text-muted-foreground">
+            Yachai es IA y puede equivocarse. Verifica los datos importantes.
+          </p>
         </form>
       </div>
     </div>

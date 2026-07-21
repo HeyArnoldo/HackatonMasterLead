@@ -9,6 +9,7 @@ const RegisterPage = lazy(() => import('@/pages/register'));
 const ChatPage = lazy(() => import('@/pages/chat'));
 const MisSesionesPage = lazy(() => import('@/pages/mis-sesiones'));
 const SesionDetallePage = lazy(() => import('@/pages/sesion-detalle'));
+const DirectorPage = lazy(() => import('@/pages/director'));
 
 export const router = createBrowserRouter([
   { path: '/login', element: <LoginPage /> },
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
         children: [
           { path: '/', element: <ChatPage /> },
           { path: '/chat/:conversacionId', element: <ChatPage /> },
+          { path: '/director', element: <DirectorPage /> },
           { path: '/sesiones', element: <MisSesionesPage /> },
           { path: '/sesiones/:id', element: <SesionDetallePage /> },
         ],

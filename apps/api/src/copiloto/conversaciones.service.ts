@@ -27,6 +27,19 @@ export class ConversacionesService {
     return this.conversaciones.find({ where: { docenteId }, order: { lastAt: 'DESC' } });
   }
 
+  /**
+   * Devuelve (o crea) el hilo persistente del canal WhatsApp del docente, para
+   * que el copiloto conserve el contexto entre mensajes de WhatsApp. Un único
+   * hilo por docente, identificado por su título.
+   */
+  async asegurarHiloWhatsapp(docenteId: string): Promise<Conversacion> {
+    const existente = await this.conversaciones.findOne({
+      where: { docenteId, titulo: 'WhatsApp' },
+    });
+    if (existente) return existente;
+    return this.crear(docenteId, 'WhatsApp');
+  }
+
   /** Carga una conversación del docente. 404 si no existe o no es suya. */
   async obtener(docenteId: string, id: string): Promise<Conversacion> {
     const conv = await this.conversaciones.findOne({ where: { id, docenteId } });

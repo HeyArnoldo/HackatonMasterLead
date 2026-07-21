@@ -17,5 +17,7 @@ import { CopilotoController } from './copiloto.controller';
   imports: [TypeOrmModule.forFeature([Conversacion, Mensaje]), AgentModule],
   controllers: [CopilotoController],
   providers: [ConversacionesService, CopilotoService, TranscripcionService],
+  // Exportados para que el canal WhatsApp reuse el MISMO copiloto y su persistencia.
+  exports: [CopilotoService, ConversacionesService, TranscripcionService],
 })
 export class CopilotoModule {}

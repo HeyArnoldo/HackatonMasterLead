@@ -32,6 +32,27 @@ export class UsersService {
   }
 
   /**
+   * Identidad simple del canal WhatsApp (hackathon): resuelve el docente por su
+   * número (E.164); si no existe, lo auto-provisiona como DOCENTE. NO hay OTP ni
+   * verificación — es una simplificación de demo: el primer mensaje crea la
+   * cuenta. El email se sintetiza (columna única/obligatoria) porque el docente
+   * aún no tiene uno.
+   */
+  async findOrCreateByPhone(phone: string, name?: string): Promise<User> {
+    const existente = await this.repo.findOne({ where: { phone } });
+    if (existente) return existente;
+    const digits = phone.replace(/[^0-9]/g, '');
+    return this.repo.save(
+      this.repo.create({
+        email: `wa+${digits}@yachai.wa`,
+        name: name?.trim() || `Docente ${phone}`,
+        phone,
+        role: UserRole.DOCENTE,
+      }),
+    );
+  }
+
+  /**
    * Login con Google: busca por googleId; si no existe pero hay un usuario
    * local con el mismo email, vincula la cuenta; si no, lo crea.
    */

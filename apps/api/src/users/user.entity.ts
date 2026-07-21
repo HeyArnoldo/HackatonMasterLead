@@ -28,6 +28,11 @@ export class User {
   @Column({ type: 'varchar', length: 500, nullable: true })
   avatarUrl: string | null;
 
+  // Número de WhatsApp (E.164) del docente. Nullable: solo lo tienen los
+  // usuarios que entran por el canal WhatsApp (find-or-create por número).
+  @Column({ type: 'varchar', length: 32, nullable: true, unique: true })
+  phone: string | null;
+
   @Column({ type: 'enum', enum: UserRole, default: UserRole.USER })
   role: UserRole;
 

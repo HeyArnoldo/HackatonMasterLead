@@ -13,6 +13,7 @@ import { MaterialesModule } from './materiales/materiales.module';
 import { GenerationAuditModule } from './generation-audit/generation-audit.module';
 import { AgentModule } from './agent/agent.module';
 import { CopilotoModule } from './copiloto/copiloto.module';
+import { WhatsappModule } from './whatsapp/whatsapp.module';
 
 @Module({
   imports: [
@@ -29,6 +30,7 @@ import { CopilotoModule } from './copiloto/copiloto.module';
     GenerationAuditModule,
     AgentModule,
     CopilotoModule,
+    WhatsappModule,
   ],
 })
 export class AppModule {}

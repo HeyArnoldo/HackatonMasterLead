@@ -43,6 +43,15 @@ export const envSchema = z.object({
   // IA (OpenAI directo). Opcional: sin OPENAI_API_KEY la generación responde 503.
   OPENAI_API_KEY: z.string().optional(),
   OPENAI_MODEL: z.string().optional(),
+  OPENAI_TRANSCRIBE_MODEL: z.string().optional(),
+
+  // Canal WhatsApp (Evolution API). Todo opcional: sin estas variables el
+  // webhook responde con cortesía y el resto de Yachai arranca igual.
+  // WA_WEBHOOK_TOKEN protege el webhook público (token compartido con Evolution).
+  EVOLUTION_URL: z.string().optional(),
+  EVOLUTION_API_KEY: z.string().optional(),
+  EVOLUTION_INSTANCE: z.string().optional(),
+  WA_WEBHOOK_TOKEN: z.string().optional(),
 });
 
 export type Env = z.infer<typeof envSchema>;

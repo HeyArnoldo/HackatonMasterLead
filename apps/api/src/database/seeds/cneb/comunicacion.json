@@ -1,0 +1,701 @@
+[
+  {
+    "area": "Comunicación",
+    "_source": "Minedu, Programa Curricular de Educación Primaria (2016), https://www.minedu.gob.pe/curriculo/pdf/programa-curricular-educacion-primaria.pdf",
+    "competencias": [
+      {
+        "codigo": "COM-C1",
+        "nombre": "Se comunica oralmente en su lengua materna",
+        "capacidades": [
+          {
+            "codigo": "COM-C1-CAP1",
+            "nombre": "Obtiene información del texto oral"
+          },
+          {
+            "codigo": "COM-C1-CAP2",
+            "nombre": "Infiere e interpreta información del texto oral"
+          },
+          {
+            "codigo": "COM-C1-CAP3",
+            "nombre": "Adecúa, organiza y desarrolla las ideas de forma coherente y cohesionada"
+          },
+          {
+            "codigo": "COM-C1-CAP4",
+            "nombre": "Utiliza recursos no verbales y paraverbales de forma estratégica"
+          },
+          {
+            "codigo": "COM-C1-CAP5",
+            "nombre": "Interactúa estratégicamente con distintos interlocutores"
+          },
+          {
+            "codigo": "COM-C1-CAP6",
+            "nombre": "Reflexiona y evalúa la forma, el contenido y contexto del texto oral"
+          }
+        ],
+        "estandares": [
+          {
+            "ciclo": "III",
+            "descripcion": "Se comunica oralmente mediante diversos tipos de textos; identifica información explícita, infiere e interpreta hechos y temas. Desarrolla sus ideas manteniéndose, por lo general, en el tema; utiliza algunos conectores, así como vocabulario de uso frecuente. Su pronunciación es entendible y se apoya en recursos no verbales y paraverbales. Reflexiona sobre textos escuchados a partir de sus conocimientos y experiencia. Se expresa adecuándose a su propósito comunicativo, interlocutores y contexto. En un intercambio, participa y responde en forma pertinente a lo que le dicen."
+          },
+          {
+            "ciclo": "IV",
+            "descripcion": "Se comunica oralmente mediante diversos tipos de textos; identifica información explícita; infiere e interpreta hechos, tema y propósito. Organiza y desarrolla sus ideas en torno a un tema y las relaciona mediante el uso de algunos conectores y referentes, así como de un vocabulario variado. Se apoya en recursos no verbales y paraverbales para enfatizar lo que dice. Reflexiona sobre textos escuchados a partir de sus conocimientos y experiencia. Se expresa adecuándose a situaciones comunicativas formales e informales. En un intercambio, comienza a adaptar lo que dice a las necesidades y puntos de vista de quien lo escucha, a través de comentarios y preguntas relevantes."
+          },
+          {
+            "ciclo": "V",
+            "descripcion": "Se comunica oralmente mediante diversos tipos de textos; infiere el tema, propósito, hechos y conclusiones a partir de información explícita, e interpreta la intención del interlocutor en discursos que contienen ironías. Se expresa adecuándose a situaciones comunicativas formales e informales. Organiza y desarrolla sus ideas en torno a un tema y las relaciona mediante el uso de conectores y algunos referentes, así como de un vocabulario variado y pertinente. Usa recursos no verbales y paraverbales para enfatizar lo que dice. Reflexiona y evalúa los textos escuchados a partir de sus conocimientos y el contexto sociocultural. En un intercambio, hace preguntas y contribuciones relevantes que responden a las ideas y puntos de vista de otros, enriqueciendo el tema tratado."
+          }
+        ],
+        "desempenos": [
+          {
+            "grado": 1,
+            "codigo": "COM-C1-G1-01",
+            "descripcion": "Recupera información explícita de los textos orales que escucha (nombres de personas y personajes, hechos y lugares) y que presentan vocabulario de uso frecuente."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C1-G1-02",
+            "descripcion": "Dice de qué trata el texto y cuál es su propósito comunicativo; para ello, se apoya en la información recurrente del texto y en su experiencia."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C1-G1-03",
+            "descripcion": "Deduce características implícitas de personas, personajes, animales, objetos y lugares, o el significado de palabras y expresiones según el contexto (adivinanzas), así como relaciones lógicas entre las ideas del texto, como causa-efecto, que se pueden establecer fácilmente a partir de información explícita del mismo."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C1-G1-04",
+            "descripcion": "Explica acciones concretas de personas y personajes relacionando algunos recursos verbales y no verbales, a partir de su experiencia."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C1-G1-05",
+            "descripcion": "Adecúa su texto oral a la situación comunicativa, a sus interlocutores y al propósito comunicativo, utilizando recursos no verbales (gestos y movimientos corporales) y recurriendo a su experiencia."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C1-G1-06",
+            "descripcion": "Expresa oralmente ideas y emociones en torno a un tema, aunque en ocasiones puede salirse de este o reiterar información innecesariamente. Establece relaciones lógicas entre las ideas (en especial, de adición y secuencia), a través de algunos conectores . Incorpora un vocabulario de uso frecuente."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C1-G1-07",
+            "descripcion": "Emplea recursos no verbales (gestos y movimientos corporales) como apoyo durante el mensaje oral y en función del propósito comunicativo, en situaciones de comunicación no formal."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C1-G1-08",
+            "descripcion": "Participa en diversos intercambios orales formulando preguntas sobre lo que le interesa saber, dando respuestas o haciendo comentarios relacionados con el tema. Recurre a normas y modos de cortesía según el contexto sociocultural."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C1-G1-09",
+            "descripcion": "Opina como hablante y oyente sobre personas, personajes y hechos de los textos orales que escucha; da razones a partir del contexto en el que se desenvuelve y de su experiencia."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C1-G2-01",
+            "descripcion": "Recupera información explícita de los textos orales que escucha (nombres de personas y personajes, acciones, hechos, lugares y fechas) y que presentan vocabulario de uso frecuente."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C1-G2-02",
+            "descripcion": "Dice de qué trata el texto y cuál es su propósito comunicativo; para ello, se apoya en la información recurrente del texto y en su experiencia."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C1-G2-03",
+            "descripcion": "Deduce características implícitas de personas, personajes, animales, objetos, hechos y lugares, o el significado de palabras y expresiones según el contexto, así como relaciones lógicas entre las ideas del texto, como causa-efecto y semejanza-diferencia, a partir de información explícita del mismo."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C1-G2-04",
+            "descripcion": "Explica acciones concretas de personas y personajes relacionando recursos verbales y no verbales, a partir de su experiencia."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C1-G2-05",
+            "descripcion": "Adecúa su texto oral a la situación comunicativa y a sus interlocutores considerando el propósito comunicativo, utilizando recursos no verbales (gestos y movimientos corporales) y recurriendo a su experiencia y tipo textual."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C1-G2-06",
+            "descripcion": "Expresa oralmente ideas y emociones en torno a un tema, aunque en ocasiones puede reiterar información innecesariamente. Establece relaciones lógicas entre ellas (en especial, de adición, secuencia y causa), a través de algunos conectores. Incorpora un vocabulario de uso frecuente."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C1-G2-07",
+            "descripcion": "Emplea recursos no verbales (gestos y movimientos corporales) y paraverbales (pronunciación entendible) para apoyar lo que dice en situaciones de comunicación no formal."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C1-G2-08",
+            "descripcion": "Participa en diversos intercambios orales formulando preguntas sobre lo que le interesa saber, dando respuestas y haciendo comentarios relacionados con el tema. Recurre a normas y modos de cortesía según el contexto sociocultural."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C1-G2-09",
+            "descripcion": "Opina como hablante y oyente sobre personas, personajes y hechos de los textos orales que escucha; da razones a partir del contexto en el que se desenvuelve y de su experiencia."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C1-G3-01",
+            "descripcion": "Recupera información explícita de los textos orales que escucha, seleccionando datos específicos (nombres de personas y personajes, acciones, hechos, lugares y fechas), y que presentan vocabulario de uso frecuente y sinónimos."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C1-G3-02",
+            "descripcion": "Explica el tema, el propósito comunicativo, las emociones y los estados de ánimo de las personas y los personajes, así como las enseñanzas que se desprenden del texto; para ello, recurre a la información relevante del mismo."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C1-G3-03",
+            "descripcion": "Deduce algunas relaciones lógicas entre las ideas del texto oral, como las secuencias temporales, causa-efecto o semejanza-diferencia, así como las características de personas, personajes, animales, objetos, hechos y lugares, el significado de palabras según el contexto y expresiones con sentido figurado (adivinanzas, refranes), a partir de la información explícita e implícita del texto."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C1-G3-04",
+            "descripcion": "Explica las acciones y motivaciones de personas y personajes, así como el uso de adjetivaciones y personificaciones; para ello, relaciona recursos verbales, no verbales y paraverbales, a partir del texto oral y de su experiencia."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C1-G3-05",
+            "descripcion": "Adecúa su texto oral a la situación comunicativa, de acuerdo al propósito comunicativo, así como a las características más comunes del género discursivo. Distingue el registro formal del informal recurriendo a su experiencia y a algunas fuentes de información complementaria."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C1-G3-06",
+            "descripcion": "Expresa oralmente ideas y emociones en torno a un tema, y evita reiterar información innecesariamente. Ordena dichas ideas y las desarrolla para ampliar la información. Establece relaciones lógicas entre las ideas (en especial, de adición, secuencia y causa-efecto), a través de algunos referentes y conectores. Incorpora un vocabulario que incluye sinónimos y algunos términos propios de los campos del saber."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C1-G3-07",
+            "descripcion": "Emplea gestos y movimientos corporales que enfatizan lo que dice. Mantiene contacto visual con sus interlocutores. Se apoya en el volumen de su voz para transmitir emociones, caracterizar personajes o dar claridad a lo que dice."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C1-G3-08",
+            "descripcion": "Participa en diversos intercambios orales alternando roles de hablante y oyente, formulando preguntas, explicando sus respuestas y haciendo comentarios relevantes al tema. Recurre a normas y modos de cortesía según el contexto sociocultural."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C1-G3-09",
+            "descripcion": "Opina como hablante y oyente sobre ideas, hechos y temas de los textos orales, del ámbito escolar, social o de medios de comunicación, a partir de su experiencia y del contexto en que se desenvuelve."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C1-G4-01",
+            "descripcion": "Recupera información explícita de los textos orales que escucha, seleccionando datos específicos, y que presentan expresiones con sentido figurado, vocabulario que incluye sinónimos y términos propios de los campos del saber."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C1-G4-02",
+            "descripcion": "Explica el tema, el propósito comunicativo, las emociones y los estados de ánimo de personas y personajes; para ello, distingue lo relevante de lo complementario."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C1-G4-03",
+            "descripcion": "Deduce algunas relaciones lógicas entre las ideas del texto oral, como las secuencias temporales, causa-efecto o semejanza-diferencia, así como las características de personas, p ersonajes, animales, objetos, hechos y lugares, el significado de palabras según el contexto y expresiones con sentido figurado (dichos populares, refranes, moralejas), a partir de la información explícita e implícita del texto."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C1-G4-04",
+            "descripcion": "Explica las motivaciones y los sentimientos de personas y personajes, así como el uso de comparaciones y personificaciones; para ello, relaciona recursos verbales, no verbales y paraverbales, a partir del texto oral y de su experiencia."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C1-G4-05",
+            "descripcion": "Adecúa su texto oral a la situación comunicativa, de acuerdo al propósito comunicativo, así como a las características más comunes del género discursivo. Distingue el registro formal del informal recurriendo a su experiencia y a algunas fuentes de información complementaria."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C1-G4-06",
+            "descripcion": "Expresa oralmente ideas y emociones en torno a un tema, de forma coherente y cohesionada. Ordena dichas ideas y las desarrolla para ampliar la información sin reiteraciones innecesarias. Establece relaciones lógicas entre las ideas (en especial, de causa-efecto y consecuencia), a través de algunos referentes y conectores. Incorpora un vocabulario que incluye sinónimos y algunos términos propios de los campos del saber."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C1-G4-07",
+            "descripcion": "Emplea gestos y movimientos corporales que enfatizan lo que dice. Mantiene contacto visual con sus interlocutores. Se apoya en el volumen y la entonación de su voz para transmitir emociones, caracterizar personajes o dar claridad a lo que dice."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C1-G4-08",
+            "descripcion": "Participa en diversos intercambios orales alternando roles de hablante y oyente, formulando preguntas, explicando sus respuestas y haciendo comentarios relevantes al tema. Recurre a normas y modos de cortesía según el contexto sociocultural."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C1-G4-09",
+            "descripcion": "Opina como hablante y oyente sobre ideas, hechos y temas de los textos orales, del ámbito escolar, social o de medios de comunicación, a partir de su experiencia y del contexto en que se desenvuelve."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-01",
+            "descripcion": "Recupera información explícita de textos orales que escucha seleccionando datos específicos. Integra esta información cuando es dicha en distintos momentos en textos que incluyen expresiones con sentido figurado, y vocabulario que incluye sinónimos y términos propios de los campos del saber."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-02",
+            "descripcion": "Explica el tema y el propósito comunicativo del texto oral. Distingue lo relevante de lo complementario clasificando y sintetizando la información. Establece conclusiones sobre lo comprendido; para ello, vincula el texto con su experiencia y el contexto sociocultural en que se desenvuelve."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-03",
+            "descripcion": "Deduce relaciones lógicas (causa-efecto, semejanza-diferencia, etc.) entre las ideas del texto oral, a partir de información explícita e implícita del mismo. Señala las características y cualidades implícitas de personas, personajes, animales, objetos, hechos y lugares, y determina el significado de palabras según el contexto y de expresiones con sentido figurado (refranes, moralejas) cuando hay algunas pistas en el texto."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-04",
+            "descripcion": "Explica las intenciones de sus interlocutores considerando recursos verbales, no verbales y paraverbales. Asimismo, los puntos de vista y las motivaciones de personas y personajes, así como figuras retóricas (por ejemplo, la hipérbole) considerando algunas características del tipo textual y género discursivo."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-05",
+            "descripcion": "Adecúa su texto oral a la situación comunicativa considerando el propósito comunicativo y algunas características del género discursivo. Elige el registro formal e informal de acuerdo con sus interlocutores y el contexto; para ello, recurre a su experiencia y a algunas fuentes de información complementaria."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-06",
+            "descripcion": "Expresa oralmente ideas y emociones de forma coherente y cohesionada. Ordena y jerarquiza las ideas en torno a un tema y las desarrolla para ampliar la información o mantener el hilo temático. Establece relaciones lógicas entre ellas (en especial, de causa-efecto, consecuencia y contraste), a través de algunos referentes y conectores. Incorpora un vocabulario que incluye sinónimos y algunos términos propios de los campos del saber."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-07",
+            "descripcion": "Emplea gestos y movimientos corporales que enfatizan lo que dice. Mantiene la distancia física con sus interlocutores, así como el volumen, la entonación y el ritmo de su voz para transmitir emociones, caracterizar personajes o producir efectos en el público, como el suspenso y el entretenimiento."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-08",
+            "descripcion": "Participa en diversos intercambios orales alternando los roles de hablante y oyente. Recurre a sus saberes previos y aporta nueva información para argumentar, explicar y complementar las ideas expuestas. Considera normas y modos de cortesía según el contexto sociocultural."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-09",
+            "descripcion": "Opina como hablante y oyente sobre ideas, hechos y temas, de textos orales del ámbito escolar, social o de medios de comunicación. Justifica su posición sobre lo que dice el texto oral considerando su experiencia y el contexto en que se desenvuelve."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C1-G5-10",
+            "descripcion": "Evalúa la adecuación de textos orales a la situación comunicativa, así como la coherencia de ideas y la cohesión entre ellas; también, la utilidad de recursos verbales, no verbales y paraverbales de acuerdo al propósito comunicativo."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-01",
+            "descripcion": "Recupera información explícita de textos orales que escucha seleccionando datos específicos. Integra esta información cuando es dicha en distintos momentos y por distintos interculores en textos que incluyen expresiones con sentido figurado, y vocabulario que incluye sinónimos y términos propios de los campos del saber."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-02",
+            "descripcion": "Explica el tema y el propósito comunicativo del texto oral. Distingue lo relevante de lo complementario clasificando y sintetizando la información. Establece conclusiones sobre lo comprendido; para ello, vincula el texto con su experiencia y los contextos socioculturales en que se desenvuelve."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-03",
+            "descripcion": "Deduce relaciones lógicas (causa-efecto, semejanza-diferencia, etc.) entre las ideas del texto oral, a partir de información explícita e implícita del mismo. Señala las características y cualidades implícitas de personas, personajes, animales, objetos, hechos y lugares, y determina el significado de palabras según el contexto y de expresiones con sentido figurado (expresiones irónicas) cuando hay algunas pistas en el texto."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-04",
+            "descripcion": "Explica la intención de sus interlocutores considerando recursos verbales, no verbales y paraverbales. Asimismo, los puntos de vista y las motivaciones de personas y personajes, así como algunas figuras retóricas (por ejemplo, la hipérbole) considerando algunas características del tipo textual y género discursivo."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-05",
+            "descripcion": "Adecúa su texto oral a la situación comunicativa considerando el propósito comunicativo y algunas características del género discursivo, manteniendo el registro formal e informal y adaptándose a sus interlocutores y al contexto; para ello, recurre a su experiencia y a algunas fuentes de información complementaria."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-06",
+            "descripcion": "Expresa oralmente ideas y emociones de forma coherente y cohesionada. Ordena y jerarquiza las ideas en torno a un tema y las desarrolla para ampliar la información o mantener el hilo temático. Establece relaciones lógicas entre ellas (en especial, de causa-efecto, consecuencia y contraste), a través de algunos referentes y conectores. Incorpora un vocabulario que incluye sinónimos y algunos términos propios de los campos del saber."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-07",
+            "descripcion": "Emplea gestos y movimientos corporales que enfatizan lo que dice. Mantiene la distancia física con sus interlocutores, así como el volumen, la entonación y el ritmo de su voz para transmitir emociones, caracterizar personajes o producir efectos en el público, como el suspenso y el entretenimiento."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-08",
+            "descripcion": "Participa en diversos intercambios orales alternando los roles de hablante y oyente. Recurre a sus saberes previos, usa lo dicho por sus interlocutores y aporta nueva información relevante para argumentar, explicar y complementar ideas. Considera normas y modos de cortesía según el contexto sociocultural."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-09",
+            "descripcion": "Opina como hablante y oyente sobre ideas, hechos y temas, de textos orales del ámbito escolar, social o de medios de comunicación. Justifica su posición sobre lo que dice el texto oral considerando su experiencia y el contexto en que se desenvuelve."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C1-G6-10",
+            "descripcion": "Evalúa la adecuación de textos orales a la situación comunicativa, así como la coherencia de ideas y la cohesión entre ellas; también, la utilidad de recursos verbales, no verbales y paraverbales de acuerdo al propósito comunicativo."
+          }
+        ]
+      },
+      {
+        "codigo": "COM-C2",
+        "nombre": "Lee diversos tipos de textos escritos en su lengua materna",
+        "capacidades": [
+          {
+            "codigo": "COM-C2-CAP1",
+            "nombre": "Obtiene información del texto escrito"
+          },
+          {
+            "codigo": "COM-C2-CAP2",
+            "nombre": "Infiere e interpreta información del texto"
+          },
+          {
+            "codigo": "COM-C2-CAP3",
+            "nombre": "Reflexiona y evalúa la forma, el contenido y contexto del texto"
+          }
+        ],
+        "estandares": [
+          {
+            "ciclo": "III",
+            "descripcion": "Lee diversos tipos de textos de estructura simple en los que predominan palabras conocidas e ilustraciones que apoyan las ideas centrales. Obtiene información poco evidente distinguiéndola de otra semejante y realiza inferencias locales a partir de información explícita. Interpreta el texto considerando información recurrente para construir su sentido global. Opina sobre sucesos e ideas importantes del texto a partir de su propia experiencia."
+          },
+          {
+            "ciclo": "IV",
+            "descripcion": "Lee diversos tipos de textos que presentan estructura simple con algunos elementos complejos y con vocabulario variado. Obtiene información poco evidente distinguiéndola de otras próximas y semejantes. Realiza inferencias locales a partir de información explícita e implícita. Interpreta el texto considerando información relevante para construir su sentido global. Reflexiona sobre sucesos e ideas importantes del texto y explica la intención de los recursos textuales más comunes a partir de su conocimiento y experiencia."
+          },
+          {
+            "ciclo": "V",
+            "descripcion": "Lee diversos tipos de textos con varios elementos complejos en su estructura y con vocabulario variado. Obtiene información e integra datos que están en distintas partes del texto. Realiza inferencias locales a partir de información explícita e implícita. Interpreta el texto considerando información relevante y complementaria para construir su sentido global. Reflexiona sobre aspectos variados del texto a partir de su conocimiento y experiencia. Evalúa el uso del lenguaje, la intención de los recursos textuales y el efecto del texto en el lector a partir de su conocimiento y del contexto sociocultural."
+          }
+        ],
+        "desempenos": [
+          {
+            "grado": 1,
+            "codigo": "COM-C2-G1-01",
+            "descripcion": "Identifica información explícita que es claramente distinguible de otra porque la relaciona con palabras conocidas o porque conoce el contenido del texto (por ejemplo, en una lista de cuentos con títulos que comienzan de diferente manera, el niño puede reconocer dónde dice “Caperucita” porque comienza como el nombre de un compañero o lo ha leído en otros textos) y que se encuentra en lugares evidentes como el título, subtítulo, inicio, final, etc., en textos con ilustraciones. Establece la secuencia de los textos que lee (instrucciones, historias, noticias)."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C2-G1-02",
+            "descripcion": "Deduce características de personajes, animales, objetos y lugares, así como relaciones lógicas de causa-efecto que se pueden establecer fácilmente a partir de información explícita del texto."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C2-G1-03",
+            "descripcion": "Predice de qué tratará el texto y cuál es su propósito comunicativo, a partir de algunos indicios, como título, ilustraciones, palabras conocidas o expresiones que se encuentran en los textos que le leen, que lee con ayuda o que lee por sí mismo."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C2-G1-04",
+            "descripcion": "Explica la relación del texto con la ilustración en textos que lee por sí mismo, que lee con ayuda del docente o que escucha leer."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C2-G1-05",
+            "descripcion": "Opina acerca de personas, personajes y hechos expresando sus preferencias. Elige o recomienda textos a partir de su experiencia, necesidades e intereses, con el fin de reflexionar sobre los textos que lee o escucha leer."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C2-G2-01",
+            "descripcion": "Identifica información explícita que se encuentra en distintas partes del texto. Distingue esta información de otra semejante (por ejemplo, distingue entre las características de dos personajes, elige entre dos datos de un animal, etc.) en diversos tipos de textos de estructura simple, con palabras conocidas e ilustraciones. Establece la secuencia de los textos que lee (instrucciones, historias, noticias)."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C2-G2-02",
+            "descripcion": "Deduce características implícitas de personajes, animales, objetos y lugares; determina el significado de palabras según el contexto y hace comparaciones; asimismo, establece relaciones lógicas de causa-efecto, semejanza-diferencia y enseñanza y propósito, a partir de información explícita del texto."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C2-G2-03",
+            "descripcion": "Predice de qué tratará el texto y cuál es su propósito comunicativo, a partir de algunos indicios, como título, ilustraciones, silueta, formato, palabras, frases y expresiones que se encuentran en los textos que le leen o que lee por sí mismo."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C2-G2-04",
+            "descripcion": "Explica el tema y el propósito de los textos que lee por sí mismo, así como las relaciones texto-ilustración."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C2-G2-05",
+            "descripcion": "Opina acerca de personas, personajes y hechos expresando sus preferencias. Elige o recomienda textos a partir de su experiencia, necesidades e intereses, con el fin de reflexionar sobre los textos que lee."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C2-G3-01",
+            "descripcion": "Identifica información explícita que se encuentra en distintas partes del texto. Distingue información de otra próxima y semejante, en la que selecciona datos específicos (por ejemplo, el lugar de un hecho en una noticia), en diversos tipos de textos de estructura simple, con algunos elementos complejos (por ejemplo, sin referentes próximos, guiones de diálogo, ilustraciones), con palabras conocidas y, en ocasiones, con vocabulario variado, de acuerdo a las temáticas abordadas."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C2-G3-02",
+            "descripcion": "Deduce características implícitas de personajes, animales, objetos y lugares, y determina el significado de palabras según el contexto y hace comparaciones; así como el tema y destinatario. Establece relaciones lógicas de causa-efecto, semejanza-diferencia y enseñanza y propósito, a partir de la información explícita e implícita relevante del texto."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C2-G3-03",
+            "descripcion": "Predice de qué tratará el texto, a partir de algunos indicios como silueta del texto, palabras, frases, colores y dimensiones de las imágenes; asimismo, contrasta la información del texto que lee."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C2-G3-04",
+            "descripcion": "Explica el tema, el propósito, la enseñanza, las relaciones texto-ilustración, así como adjetivaciones y las motivaciones de personas y personajes."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C2-G3-05",
+            "descripcion": "Opina acerca del contenido del texto, explica el sentido de algunos recursos textuales (ilustraciones, tamaño de letra, etc.) y justifica sus preferencias cuando elige o recomienda textos a partir de su experiencia, necesidades e intereses, con el fin de reflexionar sobre los textos que lee."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C2-G4-01",
+            "descripcion": "Identifica información explícita y relevante que se encuentra en distintas partes del texto. Distingue esta información de otra semejante, en la que selecciona datos específicos, en diversos tipos de textos de estructura simple, con algunos elementos complejos , así como vocabulario variado, de acuerdo a las temáticas abordadas."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C2-G4-02",
+            "descripcion": "Deduce características implícitas de personajes, animales, objetos y lugares, y determina el significado de palabras y frases según el contexto, así como de expresiones con sentido figurado (refranes, comparaciones, etc.). Establece relaciones lógicas de intención-finalidad y tema y subtema, a partir de información relevante explícita e implícita."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C2-G4-03",
+            "descripcion": "Predice de qué tratará el texto, a partir de algunos indicios como subtítulos, colores y dimensiones de las imágenes, índice, tipografía, negritas, subrayado, etc.; asimismo, contrasta la información del texto que lee."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C2-G4-04",
+            "descripcion": "Explica el tema, el propósito, las motivaciones de personas y personajes, las comparaciones y personificaciones, así como las enseñanzas y los valores del texto, clasificando y sintetizando la información."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C2-G4-05",
+            "descripcion": "Opina acerca del contenido del texto, explica el sentido de algunos recursos textuales (uso de negritas, mayúsculas, índice, tipografía, subrayado, etc.), a partir de su experiencia y contexto, y justifica sus preferencias cuando elige o recomienda textos según sus necesidades, intereses y su relación con otros textos, con el fin de reflexionar sobre los textos que lee."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C2-G5-01",
+            "descripcion": "Identifica información explícita, relevante y complementaria que se encuentra en distintas partes del texto. Selecciona datos específicos e integra información explícita cuando se encuentra en distintas partes del texto con varios elementos complejos en su estructura, así como con vocabulario variado, de acuerdo a las temáticas abordadas."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C2-G5-02",
+            "descripcion": "Deduce características implícitas de personajes, seres, objetos, hechos y lugares, y determina el significado de palabras, según el contexto, y de expresiones con sentido figurado. Establece relaciones lógicas entre las ideas del texto escrito, como intención-finalidad, tema y subtemas, causa-efecto, semejanza-diferencia y enseñanza y propósito, a partir de información relevante explícita e implícita."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C2-G5-03",
+            "descripcion": "Predice de qué tratará el texto, a partir de algunos indicios como subtítulos, colores y dimensiones de las imágenes, índice, tipografía, negritas, subrayado, fotografías, reseñas, etc.; asimismo, contrasta la información del texto que lee."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C2-G5-04",
+            "descripcion": "Explica el tema, el propósito, los puntos de vista y las motivaciones de personas y personajes, las comparaciones e hipérboles, el problema central, las enseñanzas y los valores del texto, clasificando y sintetizando la información, para interpretar el sentido global del texto."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C2-G5-05",
+            "descripcion": "Opina sobre el contenido del texto, la organización textual, la intención de algunos recursos textuales (negritas, esquemas) y el efecto del texto en los lectores, a partir de su experiencia y del contexto sociocultural en que se desenvuelve."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C2-G5-06",
+            "descripcion": "Justifica la elección o recomendación de textos de su preferencia, de acuerdo a sus necesidades, intereses y la relación con otros textos leídos; sustenta su posición sobre los textos cuando los comparte con otros; y compara textos entre sí para indicar algunas similitudes y diferencias entre tipos textuales."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C2-G6-01",
+            "descripcion": "Identifica información explícita, relevante y complementaria que se encuentra en distintas partes del texto. Selecciona datos específicos e integra información explícita cuando se encuentra en distintas partes del texto, o al realizar una lectura intertextual de diversos tipos de textos con varios elementos complejos en su estructura, así como con vocabulario variado, de acuerdo a las temáticas abordadas."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C2-G6-02",
+            "descripcion": "Deduce características implícitas de seres, objetos, hechos y lugares, y determina el significado de palabras, según el contexto, y de expresiones con sentido figurado. Establece relaciones lógicas entre las ideas del texto escrito, como intención-finalidad, tema y subtemas, causa-efecto, semejanza-diferencia y enseñanza y propósito, a partir de información relevante y complementaria, y al realizar una lectura intertextual."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C2-G6-03",
+            "descripcion": "Predice de qué tratará el texto, a partir de algunos indicios como subtítulos, colores y dimensiones de las imágenes, índice, tipografía, negritas, subrayado, fotografías, reseñas (solapa, contratapa), notas del autor, biografía del autor o ilustrador, etc.; asimismo, contrasta la información del texto que lee."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C2-G6-04",
+            "descripcion": "Explica el tema, el propósito, los puntos de vista y las motivaciones de personas y personajes, las comparaciones e hipérboles, el problema central, las enseñanzas, los valores y la intención del autor, clasificando y sintetizando la información, y elabora conclusiones sobre el texto para interpretar su sentido global."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C2-G6-05",
+            "descripcion": "Opina sobre el contenido y la organización del texto, la intención de diversos recursos textuales, la intención del autor y el efecto que produce en los lectores, a partir de su experiencia y de los contextos socioculturales en que se desenvuelve."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C2-G6-06",
+            "descripcion": "Justifica la elección o recomendación de textos de su preferencia, de acuerdo a sus necesidades, intereses y la relación con otros textos leídos; sustenta su posición sobre los valores presentes en los textos, cuando los comparte con otros; y compara textos entre sí para indicar algunas similitudes y diferencias entre tipos textuales y géneros discursivos (por ejemplo: diferencias y semejanzas entre cuento y fábula)."
+          }
+        ]
+      },
+      {
+        "codigo": "COM-C3",
+        "nombre": "Escribe diversos tipos de textos en su lengua materna",
+        "capacidades": [
+          {
+            "codigo": "COM-C3-CAP1",
+            "nombre": "Adecúa el texto a la situación comunicativa"
+          },
+          {
+            "codigo": "COM-C3-CAP2",
+            "nombre": "Organiza y desarrolla las ideas de forma coherente y cohesionada"
+          },
+          {
+            "codigo": "COM-C3-CAP3",
+            "nombre": "Utiliza convenciones del lenguaje escrito de forma pertinente"
+          },
+          {
+            "codigo": "COM-C3-CAP4",
+            "nombre": "Reflexiona y evalúa la forma, el contenido y contexto del texto escrito"
+          }
+        ],
+        "estandares": [
+          {
+            "ciclo": "III",
+            "descripcion": "Escribe diversos tipos de textos de forma reflexiva. Adecúa al propósito y el destinatario a partir de su experiencia previa. Organiza y desarrolla lógicamente las ideas en torno a un tema. Establece relaciones entre ideas a través del uso adecuado de algunos tipos de conectores y emplea vocabulario de uso frecuente. Separa adecuadamente las palabras y utiliza algunos recursos ortográficos básicos para darle claridad y sentido a su texto. Reflexiona sobre las ideas más importantes en el texto que escribe y explica acerca del uso de algunos recursos ortográficos según la situación comunicativa."
+          },
+          {
+            "ciclo": "IV",
+            "descripcion": "Escribe diversos tipos de textos de forma reflexiva. Adecúa su texto al destinatario, propósito y el registro a partir de su experiencia previa y de alguna fuente de información. Organiza y desarrolla lógicamente las ideas en torno a un tema. Establece relaciones entre ideas a través del uso adecuado de algunos tipos de conectores y de referentes; emplea vocabulario variado. Utiliza recursos ortográficos básicos para darle claridad y sentido a su texto. Reflexiona sobre la coherencia y cohesión de las ideas en el texto que escribe, y explica acerca del uso de algunos recursos textuales para reforzar sentidos y producir efectos en el lector según la situación comunicativa."
+          },
+          {
+            "ciclo": "V",
+            "descripcion": "Escribe diversos tipos de textos de forma reflexiva. Adecúa su texto al destinatario, propósito y el registro, a partir de su experiencia previa y de algunas fuentes de información complementarias. Organiza y desarrolla lógicamente las ideas en torno a un tema y las estructura en párrafos. Establece relaciones entre ideas a través del uso adecuado de algunos tipos de conectores y de referentes; emplea vocabulario variado. Utiliza recursos ortográficos para separar expresiones, ideas y párrafos con la intención de darle claridad y sentido a su texto. Reflexiona y evalúa de manera permanente la coherencia y cohesión de las ideas en el texto que escribe, así como el uso del lenguaje para argumentar o reforzar sentidos y producir efectos en el lector según la situación comunicativa."
+          }
+        ],
+        "desempenos": [
+          {
+            "grado": 1,
+            "codigo": "COM-C3-G1-01",
+            "descripcion": "Adecúa el texto a la situación comunicativa considerando el propósito comunicativo y el destinatario, recurriendo a su experiencia para escribir."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C3-G1-02",
+            "descripcion": "Escribe en nivel alfabético en torno a un tema, aunque en ocasiones puede salirse de este o reiterar información innecesariamente. Establece relaciones entre las ideas, sobre todo de adición, utilizando algunos conectores. Incorpora vocabulario de uso frecuente."
+          },
+          {
+            "grado": 1,
+            "codigo": "COM-C3-G1-03",
+            "descripcion": "Revisa el texto con ayuda del docente, para determinar si se ajusta al propósito y destinatario, o si se mantiene o no dentro del tema, con el fin de mejorarlo."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C3-G2-01",
+            "descripcion": "Adecúa el texto a la situación comunicativa considerando el propósito comunicativo y el destinatario. Recurre a su experiencia previa para escribir."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C3-G2-02",
+            "descripcion": "Escribe textos en torno a un tema. Agrupa las ideas en oraciones y las desarrolla para ampliar la información, aunque en ocasiones puede reiterar información innecesariamente. Establece relaciones entre las ideas, como adición y secuencia, utilizando algunos conectores. Incorpora vocabulario de uso frecuente."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C3-G2-03",
+            "descripcion": "Utiliza recursos gramaticales y ortográficos (por ejemplo, las mayúsculas y el punto final) que contribuyen a dar sentido a su texto. Emplea fórmulas retóricas para marcar el inicio y el final en las narraciones que escribe; asimismo, elabora rimas y juegos verbales."
+          },
+          {
+            "grado": 2,
+            "codigo": "COM-C3-G2-04",
+            "descripcion": "Revisa el texto con ayuda del docente, para determinar si se ajusta al propósito y destinatario, si existen contradicciones que afectan la coherencia entre las ideas, o si el uso de conectores asegura la cohesión entre ellas. También, revisa el uso de los recursos ortográficos empleados en su texto y verifica si falta alguno (como las mayúsculas), con el fin de mejorarlo."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C3-G3-01",
+            "descripcion": "Adecúa el texto a la situación comunicativa considerando el propósito comunicativo, el destinatario y las características más comunes del tipo textual. Distingue el registro formal del informal; para ello, recurre a su experiencia y a algunas fuentes de información complementaria."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C3-G3-02",
+            "descripcion": "Escribe textos de forma coherente y cohesionada. Ordena las ideas en torno a un tema y las desarrolla para ampliar la información, sin contradicciones, reiteraciones innecesarias o digresiones. Establece relaciones entre las ideas, como causa-efecto y secuencia, a través de algunos referentes y conectores. Incorpora un vocabulario que incluye sinónimos y algunos términos propios de los campos del saber."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C3-G3-03",
+            "descripcion": "Utiliza recursos gramaticales y ortográficos (por ejemplo, el punto seguido y los signos de admiración e interrogación) que contribuyen a dar sentido a su texto. Emplea algunas figuras retóricas (por ejemplo, las adjetivaciones) para caracterizar personas, personajes y escenarios, y elabora rimas y juegos verbales apelando al ritmo y la musicalidad de las palabras, con el fin de expresar sus experiencias y emociones."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C3-G3-04",
+            "descripcion": "Revisa el texto para determinar si se ajusta a la situación comunicativa, si existen contradicciones o reiteraciones innecesarias que afectan la coherencia entre las ideas, o si el uso de conectores y referentes asegura la cohesión entre ellas. También, revisa el uso de los recursos ortográficos empleados en su texto y verifica si falta alguno (como los signos de interrogación), con el fin de mejorarlo."
+          },
+          {
+            "grado": 3,
+            "codigo": "COM-C3-G3-05",
+            "descripcion": "Explica el efecto de su texto en los lectores, luego de compartirlo con otros. También, revisa el uso de los recursos ortográficos empleados en su texto y algunos aspectos gramaticales."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C3-G4-01",
+            "descripcion": "Adecúa el texto a la situación comunicativa considerando el propósito comunicativo, el destinatario y las características más comunes del tipo textual. Distingue el registro formal del informal; para ello, recurre a su experiencia y a algunas fuentes de información complementaria."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C3-G4-02",
+            "descripcion": "Escribe textos de forma coherente y cohesionada. Ordena las ideas en torno a un tema y las desarrolla para ampliar la información, sin contradicciones, reiteraciones innecesarias o digresiones. Establece relaciones entre las ideas, como adición, causa-efecto y consecuencia, a través de algunos referentes y conectores. Incorpora un vocabulario que incluye sinónimos y algunos términos propios de los campos del saber."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C3-G4-03",
+            "descripcion": "Utiliza recursos gramaticales y ortográficos (por ejemplo, el punto seguido y las comas enumerativas) que contribuyen a dar sentido a su texto, e incorpora algunos recursos textuales (por ejemplo, el tamaño de la letra) para reforzar dicho sentido. Emplea comparaciones y adjetivaciones para caracterizar personas, personajes y escenarios, y elabora rimas y juegos verbales apelando al ritmo y la musicalidad de las palabras, con el fin de expresar sus experiencias y emociones."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C3-G4-04",
+            "descripcion": "Revisa el texto para determinar si se ajusta a la situación comunicativa, si existen contradicciones o reiteraciones innecesarias que afectan la coherencia entre las ideas, o si el uso de conectores y referentes asegura la cohesión entre ellas. También, revisa el uso de los recursos ortográficos que empleó en su texto y verifica si falta alguno (como el punto aparte), con el fin de mejorarlo."
+          },
+          {
+            "grado": 4,
+            "codigo": "COM-C3-G4-05",
+            "descripcion": "Explica el efecto de su texto en los lectores considerando su propósito al momento de escribirlo. Asimismo, explica la importancia de los aspectos gramaticales y ortográficos más comunes."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C3-G5-01",
+            "descripcion": "Adecúa el texto a la situación comunicativa considerando el propósito comunicativo, el tipo textual, así como el formato y el soporte. Mantiene el registro formal e informal; para ello, se adapta a los destinatarios y selecciona algunas fuentes de información complementaria."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C3-G5-02",
+            "descripcion": "Escribe textos de forma coherente y cohesionada. Ordena las ideas en torno a un tema, las jerarquiza en subtemas de acuerdo a párrafos, y las desarrolla para ampliar la información, sin digresiones o vacíos. Establece relaciones entre las ideas, como causa-efecto, consecuencia y contraste, a través de algunos referentes y conectores. Incorpora de forma pertinente vocabulario que incluye sinónimos y algunos términos propios de los campos del saber."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C3-G5-03",
+            "descripcion": "Utiliza recursos gramaticales y ortográficos (por ejemplo, el punto aparte para separar párrafos) que contribuyen a dar sentido a su texto, e incorpora algunos recursos textuales (como uso de negritas o comillas) para reforzar dicho sentido. Emplea algunas figuras retóricas, (personificaciones y adjetivaciones) para caracterizar personas, personajes y escenarios, o para elaborar patrones rítmicos o versos libres, con el fin de expresar sus experiencias y emociones."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C3-G5-04",
+            "descripcion": "Evalúa de manera permanente el texto, para determinar si se ajusta a la situación comunicativa, si existen reiteraciones innecesarias o digresiones que afectan la coherencia entre las ideas, o si el uso de conectores y referentes asegura la cohesión entre ellas. También, evalúa la utilidad de los recursos ortográficos empleados y la pertinencia del vocabulario, para mejorar el texto y garantizar su sentido."
+          },
+          {
+            "grado": 5,
+            "codigo": "COM-C3-G5-05",
+            "descripcion": "Evalúa el efecto de su texto en los lectores, a partir de los recursos textuales y estilísticos utilizados, y considerando su propósito al momento de escribirlo. Compara y contrasta los aspectos gramaticales y ortográficos más comunes cuando evalúa el texto."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C3-G6-01",
+            "descripcion": "Adecúa el texto a la situación comunicativa considerando el propósito comunicativo, el tipo textual y algunas características del género discursivo, así como el formato y el soporte. Mantiene el registro formal e informal; para ello, se adapta a los destinatarios y selecciona algunas fuentes de información complementaria."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C3-G6-02",
+            "descripcion": "Escribe textos de forma coherente y cohesionada. Ordena las ideas en torno a un tema, las jerarquiza en subtemas e ideas principales de acuerdo a párrafos, y las desarrolla para ampliar la información, sin digresiones o vacíos. Establece relaciones entre las ideas, como causa-efecto, consecuencia y contraste, a través de algunos referentes y conectores. Incorpora de forma pertinente vocabulario que incluye sinónimos y diversos términos propios de los campos del saber."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C3-G6-03",
+            "descripcion": "Utiliza recursos gramaticales y ortográficos (por ejemplo, el punto aparte para separar párrafos) que contribuyen a dar sentido a su texto, e incorpora algunos recursos textuales (como uso de negritas o comillas) para reforzar dicho sentido. Emplea algunas figuras retóricas (personificaciones e hipérboles) para caracterizar personas, personajes y escenarios, o para elaborar patrones rítmicos y versos libres, con el fin de producir efectos en el lector (el entretenimiento o el suspenso, por ejemplo)."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C3-G6-04",
+            "descripcion": "Evalúa de manera permanente el texto, para determinar si se ajusta a la situación comunicativa, si existen digresiones o vacíos de información que afectan la coherencia entre las ideas, o si el uso de conectores y referentes asegura la cohesión entre ellas. También, evalúa la utilidad de los recursos ortográficos empleados y la pertinencia del vocabulario, para mejorar el texto y garantizar su sentido."
+          },
+          {
+            "grado": 6,
+            "codigo": "COM-C3-G6-05",
+            "descripcion": "Evalúa el efecto de su texto en los lectores, a partir de los recursos textuales y estilísticos utilizados, y considerando su propósito al momento de escribirlo. Compara y contrasta los aspectos gramaticales y ortográficos más comunes, así como las características de tipos textuales, cuando evalúa el texto."
+          }
+        ]
+      }
+    ]
+  }
+]

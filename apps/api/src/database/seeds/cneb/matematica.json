@@ -1,0 +1,940 @@
+[
+  {
+    "area": "Matemática",
+    "_source": "Minedu, Programa Curricular de Educación Primaria (2016), https://www.minedu.gob.pe/curriculo/pdf/programa-curricular-educacion-primaria.pdf",
+    "competencias": [
+      {
+        "codigo": "MAT-C1",
+        "nombre": "Resuelve problemas de cantidad",
+        "capacidades": [
+          {
+            "codigo": "MAT-C1-CAP1",
+            "nombre": "Traduce cantidades a expresiones numéricas"
+          },
+          {
+            "codigo": "MAT-C1-CAP2",
+            "nombre": "Comunica su comprensión sobre los números y las operaciones"
+          },
+          {
+            "codigo": "MAT-C1-CAP3",
+            "nombre": "Usa estrategias y procedimientos de estimación y cálculo"
+          },
+          {
+            "codigo": "MAT-C1-CAP4",
+            "nombre": "Argumenta afirmaciones sobre las relaciones numéricas y las operaciones"
+          }
+        ],
+        "estandares": [
+          {
+            "ciclo": "III",
+            "descripcion": "Resuelve problemas referidos a acciones de juntar, separar, agregar, quitar, igualar y comparar cantidades; y las traduce a expresiones de adición y sustracción, doble y mitad. Expresa su comprensión del valor de posición en números de dos cifras y los representa mediante equivalencias entre unidades y decenas. Así también, expresa mediante representaciones su comprensión del doble y mitad de una cantidad; usa lenguaje numérico. Emplea estrategias diversas y procedimientos de cálculo y comparación de cantidades; mide y compara el tiempo y la masa, usando unidades no convencionales. Explica por qué debe sumar o restar en una situación y su proceso de resolución."
+          },
+          {
+            "ciclo": "IV",
+            "descripcion": "Resuelve problemas referidos a una o más acciones de agregar, quitar, igualar, repetir o repartir una cantidad, combinar dos colecciones de objetos, así como partir una unidad en partes iguales; traduciéndolas a expresiones aditivas y multiplicativas con números naturales y expresiones aditivas con fracciones usuales. Expresa su comprensión del valor posicional en números de hasta cuatro cifras y los representa mediante equivalencias, así también la comprensión de las nociones de multiplicación, sus propiedades conmutativa y asociativa y las nociones de división, la noción de fracción como parte – todo y las equivalencias entre fracciones usuales; usando lenguaje numérico y diversas representaciones. Emplea estrategias, el cálculo mental o escrito para operar de forma exacta y aproximada con números naturales; así también emplea estrategias para sumar, restar y encontrar equivalencias entre fracciones. Mide o estima la masa y el tiempo, seleccionando y usando unidades no convencionales y convencionales. Justifica sus procesos de resolución y sus afirmaciones sobre operaciones inversas con números naturales."
+          },
+          {
+            "ciclo": "V",
+            "descripcion": "Resuelve problemas referidos a una o más acciones de comparar, igualar, repetir o repartir cantidades, partir y repartir una cantidad en partes iguales; las traduce a expresiones aditivas, multiplicativas y la potenciación cuadrada y cúbica; así como a expresiones de adición, sustracción y multiplicación con fracciones y decimales (hasta el centésimo). Expresa su comprensión del sistema de numeración decimal con números naturales hasta seis cifras, de divisores y múltiplos, y del valor posicional de los números decimales hasta los centésimos; con lenguaje numérico y representaciones diversas. Representa de diversas formas su comprensión de la noción de fracción como operador y como cociente, así como las equivalencias entre decimales, fracciones o porcentajes usuales. Selecciona y emplea estrategias diversas, el cálculo mental o escrito para operar con números naturales, fracciones, decimales y porcentajes de manera exacta o aproximada; así como para hacer conversiones de unidades de medida de masa, tiempo y temperatura, y medir de manera exacta o aproximada usando la unidad pertinente. Justifica sus procesos de resolución así como sus afirmaciones sobre las relaciones entre las cuatro operaciones y sus propiedades, basándose en ejemplos y sus conocimientos matemáticos."
+          }
+        ],
+        "desempenos": [
+          {
+            "grado": 1,
+            "codigo": "MAT-C1-G1-01",
+            "descripcion": "Establece relaciones entre datos y acciones de agregar, quitar y juntar cantidades, y las transforma en expresiones numéricas (modelo) de adición o sustracción con números naturales hasta 20."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C1-G1-02",
+            "descripcion": "Expresa con diversas representaciones y lenguaje numérico (números, signos y expresiones verbales) su comprensión de la decena como grupo de diez unidades y de las operaciones de adición y sustracción con números hasta 20."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C1-G1-03",
+            "descripcion": "Expresa con diversas representaciones y lenguaje numérico (números, signos y expresiones verbales) su comprensión del número como ordinal al ordenar objetos hasta el décimo lugar, del número como cardinal al determinar una cantidad de hasta 50 objetos y de la comparación y el orden entre dos cantidades."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C1-G1-04",
+            "descripcion": "Emplea las siguientes estrategias y procedimientos: Estrategias heurísticas . Estrategias de cálculo mental, como la suma de cifras iguales, el conteo y las descomposiciones del 10. Procedimientos de cálculo, como las sumas y restas sin canjes. Estrategias de comparación, como la correspondencia uno a uno."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C1-G1-05",
+            "descripcion": "Compara en forma vivencial y concreta la masa de los objetos usando otros objetos como referentes, y estima el tiempo usando unidades convencionales y referentes de actividades cotidianas (días de la semana, meses del año)."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C1-G1-06",
+            "descripcion": "Realiza afirmaciones sobre las diferentes formas de representar el número y las explica con ejemplos concretos."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C1-G1-07",
+            "descripcion": "Realiza afirmaciones sobre los resultados que podría obtener al sumar o restar y las explica con apoyo de material concreto. Asimismo, explica los pasos que siguió en la resolución de un problema."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C1-G2-01",
+            "descripcion": "Establece relaciones entre datos y una o más acciones de agregar, quitar, avanzar, retroceder, juntar, separar, comparar e igualar cantidades, y las transforma en expresiones numéricas (modelo) de adición o sustracción con números naturales de hasta dos cifras."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C1-G2-02",
+            "descripcion": "Expresa con diversas representaciones y lenguaje numérico (números, signos y expresiones verbales) su comprensión de la decena como nueva unidad en el sistema de numeración decimal y el valor posicional de una cifra en números de hasta dos cifras."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C1-G2-03",
+            "descripcion": "Expresa con diversas representaciones y lenguaje numérico (números, signos y expresiones verbales) su comprensión del número como ordinal al ordenar objetos hasta el vigésimo lugar, de la comparación entre números y de las operaciones de adición y sustracción, el doble y la mitad, con números de hasta dos cifras."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C1-G2-04",
+            "descripcion": "Emplea estrategias y procedimientos como los siguientes: Estrategias heurísticas. Estrategias de cálculo mental, como las descomposiciones aditivas o el uso de analogías (70 + 20; 70 + 9, completar a la decena más cercana, usar dobles, sumar en vez de restar, uso de la conmutatividad). Procedimientos de cálculo, como sumas o restas con y sin canjes. Estrategias de comparación, que incluyen el uso del tablero cien y otros."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C1-G2-05",
+            "descripcion": "Compara en forma vivencial y concreta la masa de objetos usando unidades no convencionales, y mide el tiempo usando unidades convencionales (días, horarios semanales)."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C1-G2-06",
+            "descripcion": "Realiza afirmaciones sobre la comparación de números naturales y de la decena, y las explica con material concreto."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C1-G2-07",
+            "descripcion": "Realiza afirmaciones sobre por qué debe sumar o restar en un problema y las explica; así también, explica su proceso de resolución y los resultados obtenidos."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C1-G3-01",
+            "descripcion": "Establece relaciones entre datos y una o más acciones de agregar, quitar, comparar, igualar, reiterar, agrupar, repartir cantidades y combinar colecciones diferentes de objetos, para transformarlas en expresiones numéricas (modelo) de adición, sustracción, multiplicación y división con números naturales de hasta tres cifras."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C1-G3-02",
+            "descripcion": "Expresa con diversas representaciones y lenguaje numérico (números, signos y expresiones verbales) su comprensión sobre la centena como nueva unidad en el sistema de numeración decimal, sus equivalencias con decenas y unidades, el valor posicional de una cifra en números de tres cifras y la comparación y el orden de números."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C1-G3-03",
+            "descripcion": "Expresa con diversas representaciones y lenguaje numérico (números, signos y expresiones verbales) su comprensión de la multiplicación y división con números naturales hasta 100, y la propiedad conmutativa de la adición."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C1-G3-04",
+            "descripcion": "Emplea estrategias y procedimientos como los siguientes: Estrategias heurísticas. Estrategias de cálculo mental, como descomposiciones aditivas y multiplicativas, duplicar o dividir por 2, multiplicación y división por 10, completar a la centena más cercana y aproximaciones. Procedimientos de cálculo escrito, como sumas o restas con canjes y uso de la asociatividad."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C1-G3-05",
+            "descripcion": "Mide y compara la masa de los objetos (kilogramo) y el tiempo (horas exactas) usando unidades convencionales y no convencionales."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C1-G3-06",
+            "descripcion": "Realiza afirmaciones sobre la comparación de números naturales y la conformación de la centena, y las explica con material concreto."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C1-G3-07",
+            "descripcion": "Realiza afirmaciones sobre el uso de la propiedad conmutativa y las explica con ejemplos concretos. Asimismo, explica por qué la sustracción es la operación inversa de la adición, por qué debe multiplicar o dividir en un problema, así como la relación inversa entre ambas operaciones; explica también su proceso de resolución y los resultados obtenidos."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C1-G4-01",
+            "descripcion": "Establece relaciones entre datos y una o más acciones de agregar, quitar, comparar, igualar, reiterar, agrupar, repartir cantidades y combinar colecciones, para transformarlas en expresiones numéricas (modelo) de adición, sustracción, multiplicación y división con números naturales de hasta cuatro cifras."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C1-G4-02",
+            "descripcion": "Establece relaciones entre datos y acciones de partir una unidad o una colección de objetos en partes iguales y las transforma en expresiones numéricas (modelo) de fracciones usuales, adición y sustracción de estas."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C1-G4-03",
+            "descripcion": "Expresa con diversas representaciones y lenguaje numérico (números, signos y expresiones verbales) su comprensión de: La unidad de millar como unidad del sistema de numeración decimal, sus equivalencias entre unidades menores, el valor posicional de un dígito en números de cuatro cifras y la comparación y el orden de números. La multiplicación y división con números naturales, así como las propiedades conmutativa y asociativa de la multiplicación. La fracción como parte-todo (cantidad discreta o continua), así como equivalencias y operaciones de adición y sustracción entre fracciones usuales usando fracciones equivalentes."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C1-G4-04",
+            "descripcion": "Emplea estrategias y procedimientos como los siguientes: Estrategias heurísticas. Estrategias de cálculo mental o escrito, como las descomposiciones aditivas y multiplicativas, doblar y dividir por 2 de forma reiterada, completar al millar más cercano, uso de la propiedad distributiva, redondeo a múltiplos de 10 y amplificación y simplificación de fracciones."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C1-G4-05",
+            "descripcion": "Mide, estima y compara la masa (kilogramo, gramo) y el tiempo (año, hora, media hora y cuarto de hora) seleccionando unidades convencionales."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C1-G4-06",
+            "descripcion": "Realiza afirmaciones sobre la conformación de la unidad de millar y las explica con material concreto."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C1-G4-07",
+            "descripcion": "Realiza afirmaciones sobre las equivalencias entre fracciones y las explica con ejemplos concretos. Asimismo, explica la comparación entre fracciones, así como su proceso de resolución y los resultados obtenidos."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C1-G5-01",
+            "descripcion": "Establece relaciones entre datos y una o más acciones de agregar, quitar, comparar, igualar, reiterar, agrupar y repartir cantidades, para transformarlas en expresiones numéricas (modelo) de adición, sustracción, multiplicación y división con números naturales, y de adición y sustracción con decimales."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C1-G5-02",
+            "descripcion": "Establece relaciones entre datos y acciones de dividir la unidad o una cantidad en partes iguales, y las transforma en expresiones numéricas (modelo) de fracciones y de adición, sustracción y multiplicación de estas."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C1-G5-03",
+            "descripcion": "Expresa con diversas representaciones y lenguaje numérico (números, signos y expresiones verbales) su comprensión de: El valor posicional de un dígito en números de hasta seis cifras, al hacer equivalencias entre decenas de millar, unidades de millar, centenas, decenas y unidades; así como del valor posicional de decimales hasta el décimo, su comparación y orden. Los múltiplos de un número natural y la relación entre las cuatro operaciones y sus propiedades (conmutativa, asociativa y distributiva). La fracción como parte de una cantidad discreta o continua y como operador. Las operaciones de adición y sustracción con números decimales y fracciones."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C1-G5-04",
+            "descripcion": "Emplea estrategias y procedimientos como los siguientes: Estrategias heurísticas. Estrategias de cálculo: uso de la reversibilidad de las operaciones con números naturales, estimación de productos y cocientes, descomposición del dividendo, amplificación y simplificación de fracciones, redondeo de expresiones decimales y uso de la propiedad distributiva de la multiplicación respecto de la adición y división."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C1-G5-05",
+            "descripcion": "Mide, estima y compara la masa de los objetos (kilogramo) y el tiempo (décadas y siglos) usando unidades convencionales (expresadas con naturales, fracciones y decimales); y usa multiplicaciones o divisiones por múltiplos de 10, así como equivalencias, para hacer conversiones de unidades de masa y tiempo."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C1-G5-06",
+            "descripcion": "Realiza afirmaciones sobre las relaciones (orden y otras) entre números naturales, decimales y fracciones; así como sobre relaciones inversas entre operaciones, las cuales justifica con varios ejemplos y sus conocimientos matemáticos."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C1-G5-07",
+            "descripcion": "Justifica su proceso de resolución y los resultados obtenidos."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C1-G6-01",
+            "descripcion": "Establece relaciones entre datos y una o más acciones de comparar, igualar, reiterar y dividir cantidades, y las transforma en expresiones numéricas (modelo) de adición, sustracción, multiplicación y división de dos números naturales (obtiene como cociente un número decimal exacto), y en potencias cuadradas y cúbicas."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C1-G6-02",
+            "descripcion": "Establece relaciones entre datos y acciones de dividir una o más unidades en partes iguales y las transforma en expresiones numéricas (modelo) de fracciones y adición, sustracción y multiplicación con expresiones fraccionarias y decimales (hasta el centésimo)."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C1-G6-03",
+            "descripcion": "Expresa con diversas representaciones y lenguaje numérico (números, signos y expresiones verbales) su comprensión de: El valor posicional de un dígito en números de hasta seis cifras y decimales hasta el centésimo, así como las unidades del sistema de numeración decimal. Los múltiplos y divisores de un número natural; las características de los números primos y compuestos; así como las propiedades de las operaciones y su relación inversa. La fracción como operador y como cociente; las equivalencias entre decimales, fracciones o porcentajes usuales; las operaciones de adición, sustracción y multiplicación con fracciones y decimales."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C1-G6-04",
+            "descripcion": "Emplea estrategias y procedimientos como los siguientes: Estrategias heurísticas. Estrategias de cálculo, como el uso de la reversibilidad de las operaciones con números naturales, la amplificación y simplificación de fracciones, el redondeo de decimales y el uso de la propiedad distributiva. Procedimientos y recursos para realizar operaciones con números naturales, expresiones fraccionarias y decimales exactos, y calcular porcentajes usuales."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C1-G6-05",
+            "descripcion": "Mide, estima y compara la masa de los objetos, el tiempo (minutos) y la temperatura usando la unidad de medida que conviene según el problema; emplea recursos y estrategias de cálculo para hacer conversiones de unidades de masa, tiempo y temperatura, expresadas con números naturales y expresiones decimales."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C1-G6-06",
+            "descripcion": "Realiza afirmaciones sobre las relaciones (orden y otras) entre decimales, fracciones o porcentajes usuales, y las justifica con varios ejemplos y sus conocimientos matemáticos."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C1-G6-07",
+            "descripcion": "Justifica su proceso de resolución y los resultados obtenidos."
+          }
+        ]
+      },
+      {
+        "codigo": "MAT-C2",
+        "nombre": "Resuelve problemas de regularidad, equivalencia y cambio",
+        "capacidades": [
+          {
+            "codigo": "MAT-C2-CAP1",
+            "nombre": "Traduce datos y condiciones a expresiones algebraicas y gráficas"
+          },
+          {
+            "codigo": "MAT-C2-CAP2",
+            "nombre": "Comunica su comprensión sobre las relaciones algebraicas"
+          },
+          {
+            "codigo": "MAT-C2-CAP3",
+            "nombre": "Usa estrategias y procedimientos para encontrar equivalencias y reglas generales"
+          },
+          {
+            "codigo": "MAT-C2-CAP4",
+            "nombre": "Argumenta afirmaciones sobre relaciones de cambio y equivalencia"
+          }
+        ],
+        "estandares": [
+          {
+            "ciclo": "III",
+            "descripcion": "Resuelve problemas que presentan equivalencias o regularidades, traduciéndolas a igualdades que contienen operaciones de adición o de sustracción y a patrones de repetición de dos criterios perceptuales y patrones aditivos. Expresa su comprensión de las equivalencias y de cómo es un patrón, usando material concreto y diversas representaciones. Emplea estrategias, la descomposición de números, cálculos sencillos para encontrar equivalencias, o para continuar y crear patrones. Explica las relaciones que encuentra en los patrones y lo que debe hacer para mantener el “equilibrio” o la igualdad, con base en experiencias y ejemplos concretos."
+          },
+          {
+            "ciclo": "IV",
+            "descripcion": "Resuelve problemas que presentan dos equivalencias, regularidades o relación de cambio entre dos magnitudes y expresiones; traduciéndolas a igualdades que contienen operaciones aditivas o multiplicativas, a tablas de valores y a patrones de repetición que combinan criterios y patrones aditivos o multiplicativos. Expresa su comprensión de la regla de formación de un patrón y del signo igual para expresar equivalencias. Así también, describe la relación de cambio entre una magnitud y otra; usando lenguaje matemático y diversas representaciones. Emplea estrategias, la descomposición de números, el cálculo mental, para crear, continuar o completar patrones de repetición. Hace afirmaciones sobre patrones, la equivalencia entre expresiones y sus variaciones y las propiedades de la igualdad, las justifica con argumentos y ejemplos concretos."
+          },
+          {
+            "ciclo": "V",
+            "descripcion": "Resuelve problemas de equivalencias, regularidades o relaciones de cambio entre dos magnitudes o entre expresiones; traduciéndolas a ecuaciones que combinan las cuatro operaciones, a expresiones de desigualdad o a relaciones de proporcionalidad directa, y patrones de repetición que combinan criterios geométricos y cuya regla de formación se asocia a la posición de sus elementos. Expresa su comprensión del término general de un patrón, las condiciones de desigualdad expresadas con los signos > y <, así como de la relación proporcional como un cambio constante; usando lenguaje matemático y diversas representaciones. Emplea recursos, estrategias y propiedades de las igualdades para resolver ecuaciones o hallar valores que cumplen una condición de desigualdad o proporcionalidad; así como procedimientos para crear, continuar o completar patrones. Realiza afirmaciones a partir de sus experiencias concretas, sobre patrones y sus elementos no inmediatos; las justifica con ejemplos, procedimientos, y propiedades de la igualdad y desigualdad."
+          }
+        ],
+        "desempenos": [
+          {
+            "grado": 1,
+            "codigo": "MAT-C2-G1-01",
+            "descripcion": "Establece relaciones de equivalencias entre dos grupos de hasta diez objetos y las trasforma en igualdades que contienen adiciones. Ejemplo: En un platillo de una balanza hay 2 pelotas rojas y 5 pelotas azules (del mismo tamaño) y en el otro platillo hay 3 pelotas amarillas y 4 pelotas rojas. El estudiante representa con una igualdad lo que observa en la balanza (2 + 5 = 3 + 4)."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C2-G1-02",
+            "descripcion": "Establece relaciones entre los datos que se repiten (objetos, colores, diseños, sonidos o movimientos) o entre cantidades que aumentan regularmente, y los transforma en patrones de repetición o en patrones aditivos."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C2-G1-03",
+            "descripcion": "Describe, usando lenguaje cotidiano y representaciones concretas y dibujos, su comprensión de la equivalencia como equilibrio o igual valor entre dos colecciones o cantidades; asimismo, cómo se forma el patrón de repetición (de un criterio perceptual) y el patrón aditivo creciente hasta el 20 (de 1 en 1 y 2 en 2)."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C2-G1-04",
+            "descripcion": "Emplea estrategias heurísticas y estrategias de cálculo (como el conteo, el ensayo-error y la descomposición aditiva) para encontrar equivalencias o crear, continuar y completar patrones."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C2-G1-05",
+            "descripcion": "Explica cómo continúa el patrón y lo que debe hacer para encontrar una equivalencia, así como su proceso de resolución. Ejemplo: En una balanza de platillos, se colocan 5 cubos en el lado izquierdo y 8 cubos en el lado derecho. ¿Cuántos cubos hay que poner del lado izquierdo para lograr el equilibrio de ambos lados?"
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C2-G2-01",
+            "descripcion": "Establece relaciones de equivalencias entre dos grupos de hasta veinte objetos y las trasforma en igualdades que contienen adiciones o sustracciones."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C2-G2-02",
+            "descripcion": "Establece relaciones entre los datos que se repiten (objetos, colores, diseños, sonidos o movimientos) o entre cantidades que aumentan o disminuyen regularmente, y los transforma en patrones de repetición o patrones aditivos."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C2-G2-03",
+            "descripcion": "Expresa, con lenguaje cotidiano y representaciones concretas o dibujos, su comprensión de la equivalencia como equilibrio o igualdad entre dos colecciones o cantidades."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C2-G2-04",
+            "descripcion": "Describe, usando lenguaje cotidiano y representaciones concretas y dibujos, el patrón de repetición (con dos criterios perceptuales), y cómo aumentan o disminuyen los números en un patrón aditivo con números de hasta 2 cifras."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C2-G2-05",
+            "descripcion": "Emplea estrategias heurísticas y estrategias de cálculo (el conteo o la descomposición aditiva) para encontrar equivalencias, mantener la igualdad (“equilibrio”) o crear, continuar y completar patrones. Ejemplo: El estudiante podría decir: “Si tú tienes tres frutas y yo cinco, ¿qué podemos hacer para que cada uno tenga el mismo número de frutas?”."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C2-G2-06",
+            "descripcion": "Explica lo que debe hacer para mantener el “equilibrio” o la igualdad, y cómo continúa el patrón y las semejanzas que encuentra en dos versiones del mismo patrón, con base en ejemplos concretos. Así también, explica su proceso de resolución. Ejemplo: El estudiante podría decir: “El collar lleva dos hojas, tres frutos secos, una concha, una y otra vez; y los bloques van dos rojos, tres azules y uno blanco, una y otra vez; ambos se forman así: dos, luego tres, luego uno”."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C2-G3-01",
+            "descripcion": "Establece relaciones de equivalencias entre dos grupos de hasta veinte objetos y las trasforma en igualdades que contienen adiciones, sustracciones o multiplicaciones."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C2-G3-02",
+            "descripcion": "Establece relaciones entre los datos que se repiten (objetos, colores, diseños, sonidos o movimientos) o entre cantidades que aumentan o disminuyen regularmente, y los transforma en patrones de repetición (con criterios perceptuales o de cambio de posición) o patrones aditivos (con números de hasta 3 cifras)."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C2-G3-03",
+            "descripcion": "Describe, con algunas expresiones del lenguaje algebraico (igualdad, patrón, etc.) y representaciones, su comprensión de la igualdad como equivalencia entre dos colecciones o cantidades, así como que un patrón puede representarse de diferentes formas."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C2-G3-04",
+            "descripcion": "Describe el cambio de una magnitud con respecto al paso del tiempo, apoyándose en tablas o dibujos. Ejemplo: El estudiante representa el mismo patrón de diferentes maneras: triángulo, rectángulo, triángulo como ABA, ABA, ABA."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C2-G3-05",
+            "descripcion": "Emplea estrategias heurísticas y estrategias de cálculo (la descomposición aditiva y multiplicativa, agregar o quitar en ambos lados de la igualdad, relaciones inversas entre operaciones y otras), para encontrar equivalencias, mantener la igualdad (“equilibrio”), encontrar relaciones de cambio entre dos magnitudes o continuar, completar y crear patrones."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C2-G3-06",
+            "descripcion": "Hace afirmaciones y explica lo que sucede al modificar las cantidades que intervienen en una relación de igualdad y cómo equiparar dos cantidades, así como lo que debe considerar para continuar o completar el patrón y las semejanzas que encuentra en dos versiones del mismo patrón, mediante ejemplos concretos. Así también, explica su proceso de resolución. Ejemplo: El estudiante podría decir: “Si quito 2 kilos en este platillo de la balanza, se perderá el equilibrio”."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C2-G4-01",
+            "descripcion": "Establece relaciones entre datos de hasta dos equivalencias y las trasforma en igualdades que contienen adiciones o sustracciones, o multiplicaciones o divisiones."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C2-G4-02",
+            "descripcion": "Establece relaciones entre los datos de una regularidad y los transforma en patrones de repetición (que combinan criterios perceptuales y un criterio geométrico de simetría) o patrones aditivos o multiplicativos (con números de hasta 4 cifras)."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C2-G4-03",
+            "descripcion": "Expresa, usando lenguaje algebraico (ícono y operaciones) y diversas representaciones, su comprensión de la regla de formación de un patrón, de la igualdad (con un término desconocido) y del signo igual, distinguiéndolo de su uso en el resultado de una operación."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C2-G4-04",
+            "descripcion": "Describe la relación de cambio de una magnitud con respecto de otra, apoyándose en tablas o dibujos."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C2-G4-05",
+            "descripcion": "Emplea estrategias heurísticas o estrategias de cálculo (duplicar o repartir en cada lado de la igualdad, relación inversa entre operaciones), para encontrar equivalencias, completar, crear o continuar patrones, o para encontrar relaciones de cambio entre dos magnitudes."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C2-G4-06",
+            "descripcion": "Hace afirmaciones sobre la equivalencia entre expresiones; para ello, usa nocionalmente las propiedades de la igualdad: uniformidad y cancelativa."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C2-G4-07",
+            "descripcion": "Hace afirmaciones sobre las regularidades, las relaciones de cambio entre magnitudes, así como los números o elementos que siguen en un patrón, y las justifica con sus experiencias concretas. Así también, justifica sus procesos de resolución."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C2-G5-01",
+            "descripcion": "Establece relaciones entre datos y valores desconocidos de una equivalencia y relaciones de variación entre los datos de dos magnitudes, y las transforma en ecuaciones simples (por ejemplo: x + a = b) con números naturales, o en tablas de proporcionalidad."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C2-G5-02",
+            "descripcion": "Establece relaciones entre los datos de una regularidad y los transforma en un patrón de repetición (que combine un criterio geométrico de simetría o traslación y un criterio perceptual) o en un patrón aditivo de segundo orden (por ejemplo: 13 - 15 - 18 - 22 - 27 - …)."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C2-G5-03",
+            "descripcion": "Expresa, con lenguaje algebraico y diversas representaciones, su comprensión de la regla de formación de un patrón de segundo orden, así como de los símbolos o letras en la ecuación y de la proporcionalidad como un cambio constante."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C2-G5-04",
+            "descripcion": "Emplea estrategias heurísticas, estrategias de cálculo y propiedades de la igualdad (uniformidad y cancelativa) para encontrar el valor de la incógnita en una ecuación, para hallar la regla de formación de un patrón o para encontrar valores de magnitudes proporcionales."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C2-G5-05",
+            "descripcion": "Elabora afirmaciones sobre los elementos no inmediatos que continúan un patrón y las justifica con ejemplos y cálculos sencillos. Asimismo, justifica sus procesos de resolución mediante el uso de propiedades de la igualdad y cálculos."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C2-G6-01",
+            "descripcion": "Establece relaciones entre datos y valores desconocidos de una equivalencia, de no equivalencia (“desequilibrio”) y de variación entre los datos de dos magnitudes, y las transforma en ecuaciones que contienen las cuatro operaciones, desigualdades con números naturales o decimales, o en proporcionalidad directa."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C2-G6-02",
+            "descripcion": "Establece relaciones entre los datos de una regularidad y los transforma en patrones de repetición (con criterios geométricos de traslación y giros), patrones (con y sin configuraciones puntuales) cuya regla se asocia a la posición de sus elementos y patrones aditivos o multiplicativos."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C2-G6-03",
+            "descripcion": "Expresa, con lenguaje algebraico y diversas representaciones, su comprensión del término general de un patrón (por ejemplo: 2, 5, 8, 11, 14...--> término general = triple de un número, menos 1), condiciones de desigualdad expresadas con los signos > y <, así como de la relación proporcional como un cambio constante."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C2-G6-04",
+            "descripcion": "Emplea estrategias heurísticas y estrategias de cálculo para determinar la regla o el término general de un patrón, y propiedades de la igualdad (uniformidad y cancelativa) para resolver ecuaciones o hallar valores que cumplen una condición de desigualdad o de proporcionalidad."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C2-G6-05",
+            "descripcion": "Elabora afirmaciones sobre los términos no inmediatos en un patrón y sobre lo que ocurre cuando modifica cantidades que intervienen en los miembros de una desigualdad, y las justifica con ejemplos, cálculos, propiedades de la igualdad o a través de sus conocimientos. Así también, justifica su proceso de resolución."
+          }
+        ]
+      },
+      {
+        "codigo": "MAT-C3",
+        "nombre": "Resuelve problemas de forma, movimiento y localización",
+        "capacidades": [
+          {
+            "codigo": "MAT-C3-CAP1",
+            "nombre": "Modela objetos con formas geométricas y sus transformaciones"
+          },
+          {
+            "codigo": "MAT-C3-CAP2",
+            "nombre": "Comunica su comprensión sobre las formas y relaciones geométricas"
+          },
+          {
+            "codigo": "MAT-C3-CAP3",
+            "nombre": "Usa estrategias y procedimientos para orientarse en el espacio"
+          },
+          {
+            "codigo": "MAT-C3-CAP4",
+            "nombre": "Argumenta afirmaciones sobre relaciones geométricas"
+          }
+        ],
+        "estandares": [
+          {
+            "ciclo": "III",
+            "descripcion": "Resuelve problemas en los que modela las características y datos de ubicación de los objetos del entorno a formas bidimensionales y tridimensionales, sus elementos, posición y desplazamientos. Describe estas formas mediante sus elementos: número de lados, esquinas, lados curvos y rectos; número de puntas caras, formas de sus caras, usando representaciones concretas y dibujos. Así también traza y describe desplazamientos y posiciones, en cuadriculados y puntos de referencia usando algunos términos del lenguaje geométrico. Emplea estrategias y procedimientos basados en la manipulación, para construir objetos y medir su longitud (ancho y largo) usando unidades no convencionales. Explica semejanzas y diferencias entre formas geométricas, así como su proceso de resolución."
+          },
+          {
+            "ciclo": "IV",
+            "descripcion": "Resuelve problemas en los que modela características y datos de ubicación de los objetos a formas bidimensionales y tridimensionales, sus elementos, propiedades, su movimiento y ubicación en el plano cartesiano. Describe con lenguaje geométrico, estas formas reconociendo ángulos rectos, número de lados y vértices del polígono, así como líneas paralelas y perpendiculares, identifica formas simétricas y realiza traslaciones, en cuadrículas. Así también elabora croquis, donde traza y describe desplazamientos y posiciones, usando puntos de referencia. Emplea estrategias y procedimientos para trasladar y construir formas a través de la composición y descomposición, y para medir la longitud, superficie y capacidad de los objetos, usando unidades convencionales y no convencionales, recursos e instrumentos de medición. Elabora afirmaciones sobre las figuras compuestas; así como relaciones entre una forma tridimensional y su desarrollo en el plano; las explica con ejemplos concretos y gráficos."
+          },
+          {
+            "ciclo": "V",
+            "descripcion": "Resuelve problemas en los que modela las características y la ubicación de objetos del entorno a formas bidimensionales y tridimensionales, sus propiedades, su ampliación, reducción o rotación. Describe y clasifica prismas rectos, cuadriláteros, triángulos, círculos, por sus elementos: vértices, lados, caras, ángulos, y por sus propiedades; usando lenguaje geométrico. Realiza giros en cuartos y medias vueltas, traslaciones, ampliación y reducción de formas bidimensionales, en el plano cartesiano. Describe recorridos y ubicaciones en planos. Emplea procedimientos e instrumentos para ampliar, reducir, girar y construir formas; así como para estimar o medir la longitud, superficie y capacidad de los objetos, seleccionando la unidad de medida convencional apropiada y realizando conversiones. Explica sus afirmaciones sobre relaciones entre elementos de las formas geométricas y sus atributos medibles, con ejemplos concretos y propiedades."
+          }
+        ],
+        "desempenos": [
+          {
+            "grado": 1,
+            "codigo": "MAT-C3-G1-01",
+            "descripcion": "Establece relaciones entre las características de los objetos del entorno y las asocia y representa con formas geométricas tridimensionales y bidimensionales que conoce, así como con la medida cualitativa de su longitud."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C3-G1-02",
+            "descripcion": "Establece relaciones entre los datos de ubicación y recorrido de objetos y personas del entorno, y los expresa con material concreto o bosquejos y desplazamientos, teniendo en cuenta su cuerpo como punto de referencia u objetos en las cuadrículas."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C3-G1-03",
+            "descripcion": "Expresa con material concreto y dibujos su comprensión sobre algunos elementos de las formas tridimensionales (caras y vértices) y bidimensionales (lados, líneas rectas y curvas). Asimismo, describe si los objetos ruedan, se sostienen, no se sostienen o tienen puntas o esquinas usando lenguaje cotidiano y algunos términos geométricos."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C3-G1-04",
+            "descripcion": "Expresa con material concreto su comprensión sobre la longitud como una de las propiedades que se puede medir en algunos objetos; asimismo, su comprensión sobre la medida de la longitud de objetos de manera cualitativa con representaciones concretas, y establece “es más largo que” o “es más corto que”."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C3-G1-05",
+            "descripcion": "Expresa con material concreto y bosquejos los desplazamientos y posiciones de objetos o personas tomando como punto de referencia su propia posición; hace uso de expresiones como “arriba”, “abajo”, “detrás de”, “encima de”, “debajo de”, “al lado”, “dentro”, “fuera”, “en el borde”."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C3-G1-06",
+            "descripcion": "Emplea estrategias heurísticas, recursos y procedimientos de comparación para medir directamente la longitud de dos objetos con unidades no convencionales (dedos, manos, pies, pasos, brazos, y objetos como clips, lápices, palillos, etc.) y la visualización para construir objetos con material concreto."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C3-G1-07",
+            "descripcion": "Hace afirmaciones sobre algunas propiedades físicas o semejanzas de los objetos y las prueba con ejemplos concretos. Así también, explica el proceso seguido. Ejemplo: El estudiante podría decir: “Algunos objetos con puntas no ruedan”, “Estos dos objetos tienen la misma forma (pelota y canica)”, etc."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C3-G2-01",
+            "descripcion": "Establece relaciones entre las características de los objetos del entorno, las asocia y representa con formas geométricas tridimensionales (cuerpos que ruedan y no ruedan) y bidimensionales (cuadrado, rectángulo, círculo, triángulo), así como con las medidas de su longitud (largo y ancho)."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C3-G2-02",
+            "descripcion": "Establece relaciones entre los datos de ubicación y recorrido de objetos y personas del entorno, y los expresa con material concreto y bosquejos o gráficos, posiciones y desplazamientos, teniendo en cuenta puntos de referencia en las cuadrículas."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C3-G2-03",
+            "descripcion": "Expresa con material concreto y dibujos su comprensión sobre algún elemento de las formas tridimensionales (número de puntas, número de caras, formas de sus caras) y bidimensionales (número de lados, vértices, lados curvos y rectos). Asimismo, describe si los objetos ruedan, se sostienen, no se sostienen o tienen puntas o esquinas usando lenguaje cotidiano y algunos términos geométricos."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C3-G2-04",
+            "descripcion": "Expresa con material concreto su comprensión sobre la medida de la longitud al determinar cuántas veces es más largo un objeto con relación a otro. Expresa también que el objeto mantiene su longitud a pesar de sufrir transformaciones como romper, enrollar o flexionar (conservación de la longitud). Ejemplo: El estudiante, luego de enrollar y desenrollar sorbetes de diferentes tamaños, los ordena por su longitud, desde el más largo hasta el más corto, y viceversa."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C3-G2-05",
+            "descripcion": "Expresa con material concreto, bosquejos o gráficos los desplazamientos y posiciones de objetos o personas con relación a un punto de referencia; hace uso de expresiones como “sube”, “entra”, “hacia adelante”, “hacia arriba”, “a la derecha”, “por el borde”, “en frente de”, etc., apoyándose con códigos de flechas."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C3-G2-06",
+            "descripcion": "Emplea estrategias, recursos y procedimientos basados en la manipulación y visualización, para construir objetos y medir su longitud usando unidades no convencionales (manos, pasos, pies, etc.)."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C3-G2-07",
+            "descripcion": "Hace afirmaciones sobre las semejanzas y diferencias entre las formas geométricas, y las explica con ejemplos concretos y con base en sus conocimientos matemáticos. Asimismo, explica el proceso seguido. Ejemplo: El estudiante afirma que todas las figuras que tienen tres lados son triángulos o que una forma geométrica sigue siendo la misma aunque cambie de posición."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C3-G3-01",
+            "descripcion": "Establece relaciones entre las características de los objetos del entorno, las asocia y representa con formas geométricas bidimensionales (figuras regulares o irregulares), sus elementos y con sus medidas de longitud y superficie; y con formas tridimensionales (cuerpos redondos y compuestos), sus elementos y su capacidad."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C3-G3-02",
+            "descripcion": "Establece relaciones entre los datos de ubicación y recorrido de los objetos y personas del entorno, y los expresa en un gráfico, teniendo a los objetos fijos como puntos de referencia; asimismo, considera el eje de simetría de un objeto o una figura."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C3-G3-03",
+            "descripcion": "Expresa con dibujos su comprensión sobre los elementos de las formas tridimensionales y bidimensionales (número de lados, vértices, eje de simetría)."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C3-G3-04",
+            "descripcion": "Expresa con material concreto su comprensión sobre las medidas de longitudes de un mismo objeto con diferentes unidades. Asimismo, su comprensión de la medida de la superficie de objetos planos de manera cualitativa con representaciones concretas, estableciendo “es más extenso que”, “es menos extenso que” (superficie asociada a la noción de extensión) y su conservación."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C3-G3-05",
+            "descripcion": "Expresa su comprensión sobre la capacidad como una de las propiedades que se puede medir en algunos recipientes, establece “contiene más que”, “contiene menos que” e identifica que la cantidad contenida en un recipiente permanece invariante a pesar de que se distribuya en otros de distinta forma y tamaño (conservación de la capacidad)."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C3-G3-06",
+            "descripcion": "Expresa con gráficos los desplazamientos y posiciones de objetos o personas con relación a objetos fijos como puntos de referencia; hace uso de algunas expresiones del lenguaje geométrico."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C3-G3-07",
+            "descripcion": "Emplea estrategias heurísticas y procedimientos como la composición y descomposición, el doblado, el recorte, la visualización y diversos recursos para construir formas y figuras simétricas (a partir de instrucciones escritas u orales). Asimismo, usa diversas estrategias para medir de manera exacta o aproximada (estimar) la longitud (centímetro, metro) y el contorno de una figura, y comparar la capacidad y superficie de los objetos empleando la unidad de medida, no convencional o convencional, según convenga, así como algunos instrumentos de medición."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C3-G3-08",
+            "descripcion": "Hace afirmaciones sobre algunas relaciones entre elementos de las formas, su composición o descomposición, y las explica con ejemplos concretos o dibujos. Asimismo, explica el proceso seguido. Ejemplo: El estudiante podría decir: “Todos los cuadrados se pueden formar con dos triángulos iguales”."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C3-G4-01",
+            "descripcion": "Establece relaciones entre las características de objetos reales o imaginarios, los asocia y representa con formas bidimensionales (polígonos) y sus elementos, así como con su perímetro, medidas de longitud y superficie; y con formas tridimensionales (cubos y prismas de base cuadrangular), sus elementos y su capacidad."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C3-G4-02",
+            "descripcion": "Establece relaciones entre los datos de ubicación y recorrido de los objetos, personas y lugares cercanos, así como la traslación de los objetos o figuras, y los expresa en gráficos o croquis teniendo a los objetos y lugares fijos como puntos de referencia."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C3-G4-03",
+            "descripcion": "Expresa con dibujos su comprensión sobre los elementos de cubos y prismas de base cuadrangular: caras, vértices, aristas; también, su comprensión sobre los elementos de los polígonos: ángulos rectos, número de lados y vértices; así como su comprensión sobre líneas perpendiculares y paralelas usando lenguaje geométrico."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C3-G4-04",
+            "descripcion": "Expresa con material concreto o gráficos su comprensión sobre el perímetro y la medida de capacidad de los recipientes para determinar cuántas veces se puede llenar uno con el otro. Asimismo, su comprensión sobre la medida de la superficie de objetos planos, de manera cualitativa y con representaciones concretas estableciendo “es más extenso que”, “es menos extenso que” (superficie asociada a la noción de extensión) y su conservación."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C3-G4-05",
+            "descripcion": "Expresa con gráficos o croquis los desplazamientos y posiciones de objetos, personas y lugares cercanos, así como sus traslaciones con relación a objetos fijos como puntos de referencia. Ejemplo: El estudiante podría dar instrucciones a partir de objetos del entorno para ubicar otros, o a partir de lugares del entorno para ubicarse o ubicar a otros."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C3-G4-06",
+            "descripcion": "Emplea estrategias, recursos y procedimientos como la composición y descomposición, la visualización, así como el uso de las cuadrículas, para construir formas simétricas, ubicar objetos y trasladar figuras, usando recursos. Así también, usa diversas estrategias para medir, de manera exacta o aproximada (estimar), la medida de los ángulos respecto al ángulo recto, la longitud, el perímetro (metro y centímetro), la superficie (unidades patrón) y la capacidad (en litro y con fracciones) de los objetos, y hace conversiones de unidades de longitud. Emplea la unidad de medida, convencional o no convencional, según convenga, así como algunos instrumentos de medición (cinta métrica, regla, envases o recipientes)."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C3-G4-07",
+            "descripcion": "Hace afirmaciones sobre algunas relaciones entre elementos de las formas y su desarrollo en el plano, y explica sus semejanzas y diferencias mediante ejemplos concretos o dibujos con base en su exploración o visualización. Así también, explica el proceso seguido. Ejemplo: El estudiante podría decir: “Un cubo se puede construir con una plantilla que contenga 6 cuadrados del mismo tamaño”."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C3-G5-01",
+            "descripcion": "Establece relaciones entre las características de objetos reales o imaginarios, los asocia y representa con formas bidimensionales (cuadriláteros) y sus elementos, así como con su perímetro y medidas de la superficie; y con formas tridimensionales (prismas rectos), sus elementos y su capacidad."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C3-G5-02",
+            "descripcion": "Establece relaciones entre los datos de ubicación y recorrido de los objetos, personas y lugares cercanos, y las expresa en un croquis teniendo en cuenta referencias como, por ejemplo, calles o avenidas."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C3-G5-03",
+            "descripcion": "Establece relaciones entre los cambios de tamaño de los objetos con las ampliaciones, reducciones y reflexiones de una figura plana."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C3-G5-04",
+            "descripcion": "Expresa con dibujos su comprensión sobre los elementos de prismas rectos y cuadriláteros (ángulos, vértices, bases), y propiedades (lados paralelos y perpendiculares) usando lenguaje geométrico."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C3-G5-05",
+            "descripcion": "Expresa con gráficos su comprensión sobre el perímetro y la medida de longitud; además, sobre la medida de capacidad de los recipientes y la medida de la superficie de objetos planos como la porción de plano ocupado y recubrimiento de espacio, y su conservación."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C3-G5-06",
+            "descripcion": "Expresa con un croquis los desplazamientos y posiciones de objetos o personas con relación a un sistema de referencia como, por ejemplo, calles o avenidas. Asimismo, describe los cambios de tamaño de los objetos mediante las ampliaciones, reducciones y reflexiones de una figura plana en el plano cartesiano."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C3-G5-07",
+            "descripcion": "Emplea estrategias de cálculo, la visualización y los procedimientos de composición y descomposición para construir formas, ángulos, realizar ampliaciones, reducciones y reflexiones de las figuras, así como para hacer trazos en el plano cartesiano. Para ello, usa diversos recursos e instrumentos de dibujo. También, usa diversas estrategias para medir, de manera exacta o aproximada (estimar), la medida de ángulos, la longitud (perímetro, kilómetro, metro), la superficie (unidades patrón), la capacidad (en litros y en decimales) de los objetos; además, realiza conversiones de unidades de longitud mediante cálculos numéricos y usa la propiedad transitiva para ordenar objetos según su longitud. Emplea la unidad no convencional o convencional, según convenga, así como algunos instrumentos de medición."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C3-G5-08",
+            "descripcion": "Plantea afirmaciones sobre las relaciones entre los objetos, entre los objetos y las formas geométricas, y entre las formas geométricas, así como su desarrollo en el plano, y las explica con argumentos basados en ejemplos concretos, gráficos y en sus conocimientos matemáticos con base en su exploración o visualización. Así también, explica el proceso seguido."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C3-G6-01",
+            "descripcion": "Establece relaciones entre las características de objetos reales o imaginarios, los asocia y representa con formas bidimensionales (triángulos, cuadriláteros y círculos), sus elementos, perímetros y superficies ; y con formas tridimensionales (prismas rectos y cilindros), sus elementos y el volumen de los prismas rectos con base rectangular."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C3-G6-02",
+            "descripcion": "Establece relaciones entre los datos de ubicación y recorrido de los objetos, personas o lugares, y las expresa en un croquis o plano sencillo teniendo en cuenta referencias como, por ejemplo, calles o avenidas."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C3-G6-03",
+            "descripcion": "Establece relaciones entre los cambios de tamaño y ubicación de los objetos con las ampliaciones, reducciones y giros en el plano cartesiano. Ejemplo: El estudiante establece las coordenadas en las que se encuentra un lugar determinado."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C3-G6-04",
+            "descripcion": "Expresa con dibujos su comprensión sobre los elementos y propiedades del prisma, triángulo, cuadrilátero y círculo usando lenguaje geométrico."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C3-G6-05",
+            "descripcion": "Expresa con gráficos su comprensión sobre el perímetro, el volumen de un cuerpo sólido y el área como propiedades medibles de los objetos."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C3-G6-06",
+            "descripcion": "Expresa con un croquis o plano sencillo los desplazamientos y posiciones de objetos o personas con relación a los puntos cardinales (sistema de referencia). Asimismo, describe los cambios de tamaño y ubicación de los objetos mediante ampliaciones, reducciones y giros en el plano cartesiano. Ejemplo: El estudiante nombra posiciones teniendo en cuenta sistemas de coordenadas presentes en los mapas."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C3-G6-07",
+            "descripcion": "Emplea estrategias heurísticas, estrategias de cálculo, la visualización y los procedimientos de composición y descomposición para construir formas desde perspectivas, desarrollo de sólidos, realizar giros en el plano, así como para trazar recorridos. Usa diversas estrategias para construir ángulos, medir la longitud (cm) y la superficie (m , cm ), y comparar el área de dos superficies o la capacidad de los objetos, de manera exacta o aproximada. Realiza cálculos numéricos para hacer conversiones de medidas (unidades de longitud). Emplea la unidad de medida no convencional o convencional, según convenga, así como instrumentos de dibujo (compás, transportador) y de medición, y diversos recursos."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C3-G6-08",
+            "descripcion": "Plantea afirmaciones sobre las relaciones entre los objetos, entre los objetos y las formas geométricas, y entre las formas geométricas, así como su desarrollo en el plano cartesiano, entre el perímetro y la superficie de una forma geométrica, y las explica con argumentos basados en ejemplos concretos, gráficos, propiedades y en sus conocimientos matemáticos con base en su exploración o visualización, usando el razonamiento inductivo. Así también, explica el proceso seguido. Ejemplo: “Dos rectángulos pueden tener diferente área pero el mismo perímetro”, “El área de un triángulo la puedo obtener dividiendo por la mitad el área de un paralelogramo”."
+          }
+        ]
+      },
+      {
+        "codigo": "MAT-C4",
+        "nombre": "Resuelve problemas de gestión de datos e incertidumbre",
+        "capacidades": [
+          {
+            "codigo": "MAT-C4-CAP1",
+            "nombre": "Representa datos con gráficos y medidas estadísticas o probabilísticas"
+          },
+          {
+            "codigo": "MAT-C4-CAP2",
+            "nombre": "Comunica su comprensión de los conceptos estadísticos y probabilísticos"
+          },
+          {
+            "codigo": "MAT-C4-CAP3",
+            "nombre": "Usa estrategias y procedimientos para recopilar y procesar datos"
+          },
+          {
+            "codigo": "MAT-C4-CAP4",
+            "nombre": "Sustenta conclusiones o decisiones con base en la información obtenida"
+          }
+        ],
+        "estandares": [
+          {
+            "ciclo": "III",
+            "descripcion": "Resuelve problemas relacionados con datos cualitativos en situaciones de su interés, recolecta datos a través de preguntas sencillas, los registra en listas o tablas de conteo simple (frecuencia) y los organiza en pictogramas horizontales y gráficos de barras simples. Lee la información contenida en estas tablas o gráficos identificando el dato o datos que tuvieron mayor o menor frecuencia y explica sus decisiones basándose en la información producida. Expresa la ocurrencia de sucesos cotidianos usando las nociones de posible o imposible y justifica su respuesta."
+          },
+          {
+            "ciclo": "IV",
+            "descripcion": "Resuelve problemas relacionados con datos cualitativos o cuantitativos (discretos) sobre un tema de estudio, recolecta datos a través de encuestas y entrevistas sencillas, registra en tablas de frecuencia simples y los representa en pictogramas, gráficos de barra simple con escala (múltiplos de diez). Interpreta información contenida en gráficos de barras simples y dobles y tablas de doble entrada, comparando frecuencias y usando el significado de la moda de un conjunto de datos; a partir de esta información, elabora algunas conclusiones y toma decisiones. Expresa la ocurrencia de sucesos cotidianos usando las nociones de seguro, más probable, menos probable, y justifica su respuesta."
+          },
+          {
+            "ciclo": "V",
+            "descripcion": "Resuelve problemas relacionados con temas de estudio, en los que reconoce variables cualitativas o cuantitativas discretas, recolecta datos a través de encuestas y de diversas fuentes de información. Selecciona tablas de doble entrada, gráficos de barras dobles y gráficos de líneas, seleccionando el más adecuado para representar los datos. Usa el significado de la moda para interpretar información contenida en gráficos y en diversas fuentes de información. Realiza experimentos aleatorios, reconoce sus posibles resultados y expresa la probabilidad de un evento relacionando el número de casos favorables y el total de casos posibles. Elabora y justifica predicciones, decisiones y conclusiones, basándose en la información obtenida en el análisis de datos o en la probabilidad de un evento."
+          }
+        ],
+        "desempenos": [
+          {
+            "grado": 1,
+            "codigo": "MAT-C4-G1-01",
+            "descripcion": "Representa las características y el comportamiento de datos cualitativos (por ejemplo, color de los ojos: pardos, negros; plato favorito: cebiche, arroz con pollo, etc.) de una población, a través de pictogramas horizontales (el símbolo representa una unidad) y gráficos de barras verticales simples (sin escala), en situaciones cotidianas de su interés personal o de sus pares."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C4-G1-02",
+            "descripcion": "Expresa la ocurrencia de acontecimientos cotidianos usando las nociones “siempre”, “a veces” y “nunca”."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C4-G1-03",
+            "descripcion": "Lee la información contenida en tablas de frecuencia simple (conteo simple), pictogramas horizontales y gráficos de barras verticales simples; indica la mayor frecuencia y representa los datos con material concreto o gráfico."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C4-G1-04",
+            "descripcion": "Recopila datos mediante preguntas sencillas y el empleo de procedimientos y recursos (material concreto y otros); los procesa y organiza en listas de datos o tablas de frecuencia simple (conteo simple) para describirlos."
+          },
+          {
+            "grado": 1,
+            "codigo": "MAT-C4-G1-05",
+            "descripcion": "Toma decisiones sencillas y las explica a partir de la información obtenida."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C4-G2-01",
+            "descripcion": "Representa las características y el comportamiento de datos cualitativos (por ejemplo, color de los ojos: pardos, negros; plato favorito: cebiche, arroz con pollo, etc.) de una población, a través de pictogramas horizontales (el símbolo representa una o dos unidades) y gráficos de barras verticales simples (sin escala), en situaciones cotidianas de su interés personal o de sus pares."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C4-G2-02",
+            "descripcion": "Expresa la ocurrencia de acontecimientos cotidianos usando las nociones “posible” e “imposible”."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C4-G2-03",
+            "descripcion": "Lee información contenida en tablas de frecuencia simple (conteo simple), pictogramas horizontales y gráficos de barras verticales simples; indica la mayor o menor frecuencia y compara los datos, los cuales representa con material concreto y gráfico."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C4-G2-04",
+            "descripcion": "Recopila datos mediante preguntas y el empleo de procedimientos y recursos (material concreto y otros); los procesa y organiza en listas de datos o tablas de frecuencia simple (conteo simple) para describirlos."
+          },
+          {
+            "grado": 2,
+            "codigo": "MAT-C4-G2-05",
+            "descripcion": "Toma decisiones sencillas y las explica a partir de la información obtenida."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C4-G3-01",
+            "descripcion": "Representa las características y el comportamiento de datos cualitativos (por ejemplo, color de los ojos: pardos, negros; plato favorito: cebiche, arroz con pollo, etc.) y cuantitativos discretos (por ejemplo: número de hermanos: 3, 2; cantidad de goles: 2, 4, 5, etc.) de una población, a través de pictogramas verticales y horizontales (el símbolo representa más de una unidad) y gráficos de barras horizontales (simples y escala dada de 2 en 2, 5 en 5 y 10 en 10), en situaciones de su interés o un tema de estudio."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C4-G3-02",
+            "descripcion": "Expresa la ocurrencia de acontecimientos cotidianos usando las nociones “seguro”, “posible” e “imposible”."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C4-G3-03",
+            "descripcion": "Lee tablas de frecuencias simples (absolutas), gráficos de barras horizontales simples con escala y pictogramas de frecuencias con equivalencias, para interpretar la información explícita de los datos contenidos en diferentes formas de representación."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C4-G3-04",
+            "descripcion": "Recopila datos mediante encuestas sencillas o entrevistas cortas con preguntas adecuadas empleando procedimientos y recursos; los procesa y organiza en listas de datos o tablas de frecuencia simple, para describirlos y analizarlos."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C4-G3-05",
+            "descripcion": "Selecciona y emplea procedimientos y recursos como el recuento, el diagrama u otros, para determinar todos los posibles resultados de la ocurrencia de acontecimientos cotidianos."
+          },
+          {
+            "grado": 3,
+            "codigo": "MAT-C4-G3-06",
+            "descripcion": "Predice la ocurrencia de un acontecimiento o suceso cotidiano. Así también, explica sus decisiones a partir de la información obtenida con base en el análisis de datos."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C4-G4-01",
+            "descripcion": "Representa las características y el comportamiento de datos cualitativos (por ejemplo, color de ojos: pardos, negros; profesión: médico, abogado, etc.) y cuantitativos discretos (por ejemplo: número de hermanos: 3, 2; cantidad de goles: 2, 4, 5, etc.) de una población, a través de pictogramas verticales y horizontales (cada símbolo representa más de una unidad), gráficos de barras con escala dada (múltiplos de 10) y la moda como la mayor frecuencia, en situaciones de interés o un tema de estudio."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C4-G4-02",
+            "descripcion": "Expresa su comprensión de la moda como la mayor frecuencia y la media aritmética como punto de equilibrio; así como todos los posibles resultados de la ocurrencia de sucesos cotidianos usando las nociones “seguro”, “más probable” y “menos probable”."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C4-G4-03",
+            "descripcion": "Lee gráficos de barras con escala, tablas de doble entrada y pictogramas de frecuencias con equivalencias, para interpretar la información a partir de los datos contenidos en diferentes formas de representación y de la situación estudiada."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C4-G4-04",
+            "descripcion": "Recopila datos mediante encuestas sencillas o entrevistas cortas con preguntas adecuadas empleando procedimientos y recursos; los procesa y organiza en listas de datos, tablas de doble entrada o tablas de frecuencia, para describirlos y analizarlos."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C4-G4-05",
+            "descripcion": "Selecciona y emplea procedimientos y recursos como el recuento, el diagrama, las tablas de frecuencia u otros, para determinar la media aritmética como punto de equilibrio, la moda como la mayor frecuencia y todos los posibles resultados de la ocurrencia de sucesos cotidianos."
+          },
+          {
+            "grado": 4,
+            "codigo": "MAT-C4-G4-06",
+            "descripcion": "Predice que la posibilidad de ocurrencia de un suceso es mayor que otro. Así también, explica sus decisiones y conclusiones a partir de la información obtenida con base en el análisis de datos."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C4-G5-01",
+            "descripcion": "Representa las características de una población en estudio, las que asocia a variables cualitativas (por ejemplo, color de ojos: pardos, negros; profesión: médico, abogado, etc.) y cuantitativas discretas (por ejemplo, número de hermanos: 3, 2; cantidad de goles: 2, 4, 5, etc.), así como también el comportamiento del conjunto de datos, a través de pictogramas verticales y horizontales (cada símbolo representa más de una unidad), gráficos de barras con escala dada (múltiplos de 10), la moda como la mayor frecuencia y la media aritmética como punto de equilibrio."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C4-G5-02",
+            "descripcion": "Expresa su comprensión de la moda como la mayor frecuencia y la media aritmética como punto de equilibrio; así como todos los posibles resultados de la ocurrencia de sucesos cotidianos usando las nociones “seguro”, “más probable” y “menos probable”."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C4-G5-03",
+            "descripcion": "Lee gráficos de barras con escala, tablas de doble entrada y pictogramas de frecuencias con equivalencias, para interpretar la información del mismo conjunto de datos contenidos en diferentes formas de representación y de la situación estudiada."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C4-G5-04",
+            "descripcion": "Recopila datos mediante encuestas sencillas o entrevistas cortas con preguntas adecuadas empleando procedimientos y recursos; los procesa y organiza en listas de datos, tablas de doble entrada o tablas de frecuencia, para describirlos y analizarlos."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C4-G5-05",
+            "descripcion": "Selecciona y emplea procedimientos y recursos como el recuento, el diagrama, las tablas de frecuencia u otros, para determinar la media aritmética como punto de equilibrio, la moda como la mayor frecuencia y todos los posibles resultados de la ocurrencia de sucesos cotidianos."
+          },
+          {
+            "grado": 5,
+            "codigo": "MAT-C4-G5-06",
+            "descripcion": "Predice la mayor o menor frecuencia de un conjunto de datos, o si la posibilidad de ocurrencia de un suceso es mayor que otro. Así también, explica sus decisiones y conclusiones a partir de la información obtenida con base en el análisis de datos."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C4-G6-01",
+            "descripcion": "Representa las características de una población en estudio sobre situaciones de interés o aleatorias, asociándolas a variables cualitativas (por ejemplo: vóley, tenis) y cuantitativas discretas (por ejemplo: 3, 4, 5 hijos), así como también el comportamiento del conjunto de datos, a través de gráficos de barras dobles, gráficos de líneas, la moda y la media aritmética como reparto equitativo."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C4-G6-02",
+            "descripcion": "Determina todos los posibles resultados de una situación aleatoria a través de su probabilidad como fracción."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C4-G6-03",
+            "descripcion": "Expresa su comprensión de la moda como la mayor frecuencia y la media aritmética como reparto equitativo; así como todos los posibles resultados de una situación aleatoria en forma oral usando las nociones “más probables” o “menos probables”, y numéricamente. Ejemplo: El estudiante podría decir: “En dos de los cinco casos, el resultado es favorable: 2/5”."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C4-G6-04",
+            "descripcion": "Lee tablas de doble entrada y gráficos de barras dobles, así como información proveniente de diversas fuentes (periódicos, revistas, entrevistas, experimentos, etc.), para interpretar la información que contienen considerando los datos, las condiciones de la situación y otra información que se tenga sobre las variables. También, advierte que hay tablas de doble entrada con datos incompletos, las completa y produce nueva información."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C4-G6-05",
+            "descripcion": "Recopila datos mediante encuestas sencillas o entrevistas cortas con preguntas adecuadas empleando procedimientos y recursos; los procesa y organiza en tablas de doble entrada o tablas de frecuencia, para describirlos y analizarlos."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C4-G6-06",
+            "descripcion": "Selecciona y emplea procedimientos y recursos como el recuento, el diagrama, las tablas de frecuencia u otros, para determinar la media aritmética como reparto equitativo, la moda, los casos favorables a un suceso y su probabilidad como fracción."
+          },
+          {
+            "grado": 6,
+            "codigo": "MAT-C4-G6-07",
+            "descripcion": "Predice la tendencia de los datos o la ocurrencia de sucesos a partir del análisis de los resultados de una situación aleatoria. Así también, justifica sus decisiones y conclusiones a partir de la información obtenida con base en el análisis de datos."
+          }
+        ]
+      }
+    ]
+  }
+]

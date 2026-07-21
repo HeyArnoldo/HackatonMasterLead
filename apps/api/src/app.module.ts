@@ -6,6 +6,11 @@ import { validateEnv } from './config/env.validation';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { HealthModule } from './health/health.module';
+import { CurriculumModule } from './curriculum/curriculum.module';
+import { EscuelasModule } from './escuelas/escuelas.module';
+import { SesionesModule } from './sesiones/sesiones.module';
+import { MaterialesModule } from './materiales/materiales.module';
+import { GenerationAuditModule } from './generation-audit/generation-audit.module';
 
 @Module({
   imports: [
@@ -15,6 +20,11 @@ import { HealthModule } from './health/health.module';
     UsersModule,
     AuthModule,
     HealthModule,
+    CurriculumModule,
+    EscuelasModule,
+    SesionesModule,
+    MaterialesModule,
+    GenerationAuditModule,
   ],
 })
 export class AppModule {}

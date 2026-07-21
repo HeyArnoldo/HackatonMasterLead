@@ -2,7 +2,9 @@
 # Adminer (UI web para la DB) es opcional: docker compose --profile tools up -d
 services:
   db:
-    image: postgres:16-alpine
+    # pgvector/pgvector:pg16 = Postgres 16 con la extensión pgvector preinstalada
+    # (necesaria para la columna embedding vector(1536) de desempeno).
+    image: pgvector/pgvector:pg16
     container_name: yachai-db
     environment:
       POSTGRES_USER: ${DB_USER:-app}

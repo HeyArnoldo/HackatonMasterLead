@@ -1,4 +1,15 @@
-import { Body, Controller, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
+import {
+  BadRequestException,
+  Body,
+  Controller,
+  Get,
+  Param,
+  Patch,
+  Post,
+  Res,
+  UseGuards,
+} from '@nestjs/common';
+import { Response } from 'express';
 import {
   ActualizarSesionInput,
   actualizarSesionInputSchema,
@@ -17,6 +28,8 @@ import { CurrentUser } from '../common/decorators/current-user.decorator';
 import { ZodValidationPipe } from '../common/pipes/zod-validation.pipe';
 import { User } from '../users/user.entity';
 import { SesionGeneratorService } from '../agent/agent.service';
+import { PdfService } from '../pdf/pdf.service';
+import { renderSesionLatex } from '../pdf/sesion-latex.template';
 import { SesionesService } from './sesiones.service';
 
 @Controller('sesiones')
@@ -26,6 +39,7 @@ export class SesionesController {
   constructor(
     private readonly generator: SesionGeneratorService,
     private readonly sesiones: SesionesService,
+    private readonly pdf: PdfService,
   ) {}
 
   /**
@@ -67,6 +81,28 @@ export class SesionesController {
     @Param(new ZodValidationPipe(idParamSchema)) params: IdParam,
   ): Promise<SesionDetalle> {
     return this.sesiones.obtener(user.id, params.id);
+  }
+
+  /**
+   * GET /api/sesiones/:id/pdf — compila el `contenidoJson` de la sesión propia
+   * a un PDF (plantilla determinista) y lo devuelve inline. 404 si no es propia,
+   * 400 si aún no tiene contenido, 503 si tectonic no está instalado.
+   */
+  @Get(':id/pdf')
+  async pdfDeSesion(
+    @CurrentUser() user: User,
+    @Param(new ZodValidationPipe(idParamSchema)) params: IdParam,
+    @Res() res: Response,
+  ): Promise<void> {
+    const detalle = await this.sesiones.obtener(user.id, params.id);
+    if (!detalle.contenidoJson) {
+      throw new BadRequestException('La sesión aún no tiene contenido para exportar a PDF.');
+    }
+    const latex = renderSesionLatex(detalle.contenidoJson);
+    const pdf = await this.pdf.compile(latex);
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `inline; filename="sesion-${detalle.id}.pdf"`);
+    res.send(pdf);
   }
 
   /** PATCH /api/sesiones/:id — actualiza contenidoJson y/o estado (borrador → final). */

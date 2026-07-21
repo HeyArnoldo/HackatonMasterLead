@@ -3,9 +3,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { CurriculumModule } from '../curriculum/curriculum.module';
 import { GenerationAuditModule } from '../generation-audit/generation-audit.module';
 import { SesionAprendizaje } from '../sesiones/sesion-aprendizaje.entity';
+import { Evaluacion } from '../evaluaciones/evaluacion.entity';
 import { AgentToolExecutorService } from './agent-tool-executor.service';
 import { VerifierService } from './verifier.service';
 import { SesionGeneratorService } from './agent.service';
+import { EvaluacionGeneratorService } from './evaluacion.service';
 
 /**
  * Módulo del agente generador de sesiones. Reúne las tools de currículo, el
@@ -13,8 +15,22 @@ import { SesionGeneratorService } from './agent.service';
  * Registra su propio repo de SesionAprendizaje (evita ciclo con SesionesModule).
  */
 @Module({
-  imports: [CurriculumModule, GenerationAuditModule, TypeOrmModule.forFeature([SesionAprendizaje])],
-  providers: [AgentToolExecutorService, VerifierService, SesionGeneratorService],
-  exports: [SesionGeneratorService, VerifierService, AgentToolExecutorService],
+  imports: [
+    CurriculumModule,
+    GenerationAuditModule,
+    TypeOrmModule.forFeature([SesionAprendizaje, Evaluacion]),
+  ],
+  providers: [
+    AgentToolExecutorService,
+    VerifierService,
+    SesionGeneratorService,
+    EvaluacionGeneratorService,
+  ],
+  exports: [
+    SesionGeneratorService,
+    EvaluacionGeneratorService,
+    VerifierService,
+    AgentToolExecutorService,
+  ],
 })
 export class AgentModule {}

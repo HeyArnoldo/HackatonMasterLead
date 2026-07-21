@@ -1,8 +1,9 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { In, Repository } from 'typeorm';
-import { EstadoSesion } from '@app/contracts';
+import { EstadoEvaluacion, EstadoSesion } from '@app/contracts';
 import { CurriculumArea } from '../curriculum/curriculum-area.entity';
+import { Evaluacion } from '../evaluaciones/evaluacion.entity';
 import { Competencia } from '../curriculum/competencia.entity';
 import { Capacidad } from '../curriculum/capacidad.entity';
 import { Estandar } from '../curriculum/estandar.entity';
@@ -64,6 +65,21 @@ export interface GuardarSesionInput {
   };
 }
 
+export interface GuardarEvaluacionInput {
+  docenteId: string;
+  areaId: string | null;
+  grado: number;
+  competenciaIds: string[];
+  contenidoJson: unknown;
+  audit: {
+    prompt: string;
+    contextoUsado: unknown;
+    versionCurriculo?: string | null;
+    modelo?: string | null;
+    tokens?: number;
+  };
+}
+
 /**
  * Contexto curado (MVP): pistas de contextualización amazónica y notas de
  * lengua originaria. Sin llamadas externas — es un helper liviano.
@@ -103,6 +119,7 @@ export class AgentToolExecutorService {
     @InjectRepository(Estandar) private readonly estandares: Repository<Estandar>,
     @InjectRepository(Desempeno) private readonly desempenos: Repository<Desempeno>,
     @InjectRepository(SesionAprendizaje) private readonly sesiones: Repository<SesionAprendizaje>,
+    @InjectRepository(Evaluacion) private readonly evaluaciones: Repository<Evaluacion>,
     @InjectRepository(GenerationAudit) private readonly audits: Repository<GenerationAudit>,
   ) {}
 
@@ -247,5 +264,36 @@ export class AgentToolExecutorService {
     );
     this.logger.log(`Sesión ${sesion.id} guardada (borrador) con auditoría ${audit.id}.`);
     return sesion;
+  }
+
+  /**
+   * guardarEvaluacion → persiste GenerationAudit + Evaluacion (estado=borrador).
+   * Igual que `guardarSesion`, lo invoca el gate SOLO tras aprobar el Verificador,
+   * de modo que nunca se guarda un examen con desempeños inventados.
+   */
+  async guardarEvaluacion(input: GuardarEvaluacionInput): Promise<Evaluacion> {
+    const audit = await this.audits.save(
+      this.audits.create({
+        prompt: input.audit.prompt,
+        contextoUsado: input.audit.contextoUsado,
+        versionCurriculo: input.audit.versionCurriculo ?? null,
+        modelo: input.audit.modelo ?? null,
+        tokens: input.audit.tokens ?? 0,
+      }),
+    );
+
+    const evaluacion = await this.evaluaciones.save(
+      this.evaluaciones.create({
+        docenteId: input.docenteId,
+        grado: input.grado,
+        areaId: input.areaId,
+        competenciaIds: input.competenciaIds,
+        contenidoJson: input.contenidoJson,
+        estado: EstadoEvaluacion.BORRADOR,
+        generationAuditId: audit.id,
+      }),
+    );
+    this.logger.log(`Evaluación ${evaluacion.id} guardada (borrador) con auditoría ${audit.id}.`);
+    return evaluacion;
   }
 }

@@ -1,6 +1,17 @@
-import { ContenidoSesion, MomentoNombre } from '@app/contracts';
+import {
+  ContenidoEvaluacion,
+  ContenidoSesion,
+  MomentoNombre,
+  TipoItemEvaluacion,
+} from '@app/contracts';
 import { Desempeno } from '../curriculum/desempeno.entity';
-import { checkCitas, checkEstructura, checkMultigrado, VerifierService } from './verifier.service';
+import {
+  checkCitas,
+  checkCitasEvaluacion,
+  checkEstructura,
+  checkMultigrado,
+  VerifierService,
+} from './verifier.service';
 
 /** Sesión base válida (un grado, cita un desempeño real). */
 function baseContenido(overrides: Partial<ContenidoSesion> = {}): ContenidoSesion {
@@ -189,5 +200,96 @@ describe('VerifierService.verify (con repo mockeado)', () => {
     const result = await service.verify(contenido, { competenciaIds: ['comp-uuid'], grados: [1] });
     expect(result.valid).toBe(false);
     expect(result.invalidCodigos).toContain('INVENTADO-01');
+  });
+});
+
+/** Evaluación base válida (un ítem que cita un desempeño real). */
+function baseEvaluacion(overrides: Partial<ContenidoEvaluacion> = {}): ContenidoEvaluacion {
+  return {
+    titulo: 'Evaluación de cantidad',
+    area: 'Matemática',
+    grado: 1,
+    instrucciones: 'Resuelve cada problema.',
+    items: [
+      {
+        enunciado: '¿Cuántas semillas hay?',
+        tipo: TipoItemEvaluacion.RESPUESTA_ABIERTA,
+        opciones: [],
+        desempenoCodigo: 'MAT-C1-G1-01',
+        puntaje: 2,
+      },
+    ],
+    puntajeTotal: 2,
+    ...overrides,
+  };
+}
+
+describe('checkCitasEvaluacion (integridad de citas del examen)', () => {
+  it('rechaza un ítem que evalúa un desempeño inexistente', () => {
+    const contenido = baseEvaluacion({
+      items: [
+        {
+          enunciado: 'x',
+          tipo: TipoItemEvaluacion.RESPUESTA_ABIERTA,
+          opciones: [],
+          desempenoCodigo: 'MAT-C1-G1-99',
+          puntaje: 1,
+        },
+      ],
+      puntajeTotal: 1,
+    });
+    const { errors, invalidCodigos } = checkCitasEvaluacion(contenido, new Set(['MAT-C1-G1-01']));
+    expect(invalidCodigos).toEqual(['MAT-C1-G1-99']);
+    expect(errors).toHaveLength(1);
+  });
+
+  it('acepta cuando todos los ítems citan desempeños reales', () => {
+    const { errors, invalidCodigos } = checkCitasEvaluacion(
+      baseEvaluacion(),
+      new Set(['MAT-C1-G1-01']),
+    );
+    expect(invalidCodigos).toEqual([]);
+    expect(errors).toEqual([]);
+  });
+});
+
+describe('VerifierService.verifyEvaluacion (con repo mockeado)', () => {
+  function makeService(codigosEnBd: string[]): VerifierService {
+    const repo = {
+      find: jest.fn().mockResolvedValue(codigosEnBd.map((codigo) => ({ codigo }) as Desempeno)),
+    };
+    return new VerifierService(repo as never);
+  }
+
+  it('rechaza un examen que inventa un desempeño (gate del Verificador)', async () => {
+    const service = makeService(['MAT-C1-G1-01']);
+    const contenido = baseEvaluacion({
+      items: [
+        {
+          enunciado: 'x',
+          tipo: TipoItemEvaluacion.OPCION_MULTIPLE,
+          opciones: ['a', 'b'],
+          desempenoCodigo: 'INVENTADO-99',
+          puntaje: 1,
+        },
+      ],
+      puntajeTotal: 1,
+    });
+    const result = await service.verifyEvaluacion(contenido, {
+      competenciaIds: ['comp-uuid'],
+      grados: [1],
+    });
+    expect(result.valid).toBe(false);
+    expect(result.invalidCodigos).toContain('INVENTADO-99');
+  });
+
+  it('acepta un examen cuyos ítems citan desempeños reales', async () => {
+    const service = makeService(['MAT-C1-G1-01']);
+    const result = await service.verifyEvaluacion(baseEvaluacion(), {
+      competenciaIds: ['comp-uuid'],
+      grados: [1],
+    });
+    expect(result.valid).toBe(true);
+    expect(result.errors).toEqual([]);
   });
 });

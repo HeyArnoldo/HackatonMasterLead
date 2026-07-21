@@ -64,7 +64,12 @@ export class CopilotoService {
       '   verificador no haya aprobado. Cuando aprueba, te devuelve un `sesionId`: recién ahí',
       '   confírmale al docente que su sesión quedó guardada como borrador y resúmela con calidez.',
       '',
-      'Nunca guardas la sesión por tu cuenta: solo la PROPONES; el verificador y el sistema deciden.',
+      'EXÁMENES / EVALUACIONES: si el docente pide una EVALUACIÓN o EXAMEN sobre un tema, sigue el',
+      'MISMO flujo de currículo (buscar_curriculo → obtener_desempenos) y usa `proponer_evaluacion`',
+      'con varios ítems (mezcla opción múltiple, verdadero/falso y respuesta abierta); cada ítem DEBE',
+      'evaluar un desempeño REAL. También corre el Verificador y devuelve un `evaluacionId` al aprobar.',
+      '',
+      'Nunca guardas la sesión ni la evaluación por tu cuenta: solo las PROPONES; el verificador decide.',
     ].join('\n');
   }
 

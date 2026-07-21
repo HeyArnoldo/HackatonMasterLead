@@ -9,10 +9,12 @@ import { HealthModule } from './health/health.module';
 import { CurriculumModule } from './curriculum/curriculum.module';
 import { EscuelasModule } from './escuelas/escuelas.module';
 import { SesionesModule } from './sesiones/sesiones.module';
+import { EvaluacionesModule } from './evaluaciones/evaluaciones.module';
 import { MaterialesModule } from './materiales/materiales.module';
 import { GenerationAuditModule } from './generation-audit/generation-audit.module';
 import { AgentModule } from './agent/agent.module';
 import { CopilotoModule } from './copiloto/copiloto.module';
+import { PdfModule } from './pdf/pdf.module';
 import { WhatsappModule } from './whatsapp/whatsapp.module';
 
 @Module({
@@ -26,10 +28,12 @@ import { WhatsappModule } from './whatsapp/whatsapp.module';
     CurriculumModule,
     EscuelasModule,
     SesionesModule,
+    EvaluacionesModule,
     MaterialesModule,
     GenerationAuditModule,
     AgentModule,
     CopilotoModule,
+    PdfModule,
     WhatsappModule,
   ],
 })

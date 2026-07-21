@@ -1,6 +1,11 @@
 import { tool, ToolSet } from 'ai';
 import { z } from 'zod';
-import { ContenidoSesion, contenidoSesionSchema } from '@app/contracts';
+import {
+  ContenidoEvaluacion,
+  contenidoEvaluacionSchema,
+  ContenidoSesion,
+  contenidoSesionSchema,
+} from '@app/contracts';
 import { AgentToolExecutorService, ToolAuditCollector } from '../agent/agent-tool-executor.service';
 import { buildGatherTools } from '../agent/agent-tools';
 import { VerifierService, VerificationResult } from '../agent/verifier.service';
@@ -108,10 +113,93 @@ export async function proponerSesion(
   };
 }
 
+export interface ProponerEvaluacionArgs {
+  area: string;
+  grado: number;
+  competenciaIds: string[];
+  tema?: string;
+  contenidoJson: ContenidoEvaluacion;
+}
+
+export interface ProponerEvaluacionResult {
+  ok: boolean;
+  valid: boolean;
+  evaluacionId?: string;
+  titulo?: string;
+  errors: string[];
+  invalidCodigos: string[];
+  instruccion?: string;
+}
+
+/**
+ * GATE del Verificador para la EVALUACIÓN (misma disciplina que `proponerSesion`).
+ * Corre `verifyEvaluacion` (estructura + integridad de citas de cada ítem) ANTES
+ * de guardar. Si falla, devuelve la corrección al modelo y NO guarda nada — nunca
+ * se persiste un examen con desempeños inventados. Solo cuando aprueba se guarda
+ * como borrador (reusa `guardarEvaluacion`). Función pura → testeable aislada.
+ */
+export async function proponerEvaluacion(
+  ctx: CopilotoToolsContext,
+  args: ProponerEvaluacionArgs,
+): Promise<ProponerEvaluacionResult> {
+  const { exec, verifier, audit, docenteId, modelo } = ctx;
+
+  const area = await exec.resolveArea(args.area);
+  const scopeCompetenciaIds = args.competenciaIds.length
+    ? args.competenciaIds
+    : area
+      ? await exec.competenciaIdsDeArea(area.id)
+      : [];
+
+  const verification: VerificationResult = await verifier.verifyEvaluacion(args.contenidoJson, {
+    competenciaIds: scopeCompetenciaIds,
+    grados: [args.grado],
+  });
+
+  if (!verification.valid) {
+    audit.record('proponer_evaluacion', args, { valid: false, errors: verification.errors });
+    return {
+      ok: false,
+      valid: false,
+      errors: verification.errors,
+      invalidCodigos: verification.invalidCodigos,
+      instruccion:
+        'La evaluación fue RECHAZADA por el verificador. Corrige estos errores y vuelve a llamar ' +
+        'proponer_evaluacion. Si citaste un desempeño inexistente, obtén códigos reales con ' +
+        'obtener_desempenos; JAMÁS inventes un código.',
+    };
+  }
+
+  const evaluacion = await exec.guardarEvaluacion({
+    docenteId,
+    areaId: area?.id ?? null,
+    grado: args.grado,
+    competenciaIds: args.competenciaIds,
+    contenidoJson: args.contenidoJson,
+    audit: {
+      prompt: 'copiloto-conversacional',
+      contextoUsado: { toolCalls: audit.all() },
+      versionCurriculo: VERSION_CURRICULO,
+      modelo,
+    },
+  });
+  audit.record('proponer_evaluacion', args, { valid: true, evaluacionId: evaluacion.id });
+
+  return {
+    ok: true,
+    valid: true,
+    evaluacionId: evaluacion.id,
+    titulo: args.contenidoJson.titulo,
+    errors: [],
+    invalidCodigos: [],
+  };
+}
+
 /**
  * Tools del copiloto: las 3 de recolección (reusa el executor del agente) +
- * `proponer_sesion`, que corre el Verificador ANTES de guardar. El modelo NUNCA
- * recibe una tool de guardado directo: solo puede PROPONER; el gate decide.
+ * `proponer_sesion` y `proponer_evaluacion`, que corren el Verificador ANTES de
+ * guardar. El modelo NUNCA recibe una tool de guardado directo: solo puede
+ * PROPONER; el gate decide.
  */
 export function buildCopilotoTools(ctx: CopilotoToolsContext): ToolSet {
   const gather = buildGatherTools({
@@ -147,6 +235,26 @@ export function buildCopilotoTools(ctx: CopilotoToolsContext): ToolSet {
         ),
       }),
       execute: (args) => proponerSesion(ctx, args),
+    }),
+    proponer_evaluacion: tool({
+      description:
+        'Propone la EVALUACIÓN/examen final sobre un tema. Corre el VERIFICADOR (integridad de citas ' +
+        'de cada ítem + estructura) ANTES de guardar. Si algo falla, devuelve los errores para que ' +
+        'corrijas y vuelvas a proponer. Solo cuando aprueba se guarda como borrador y se devuelve el ' +
+        '`evaluacionId`. Cada ítem DEBE evaluar un desempeño real obtenido de obtener_desempenos.',
+      inputSchema: z.object({
+        area: z.string().describe('Nombre del área, ej "Comunicación" o "Matemática".'),
+        grado: z.number().int().min(1).max(6).describe('Grado de la evaluación.'),
+        competenciaIds: z
+          .array(z.string())
+          .min(1)
+          .describe('UUIDs de las competencias evaluadas (de buscar_curriculo).'),
+        tema: z.string().optional().describe('Tema o eje de la evaluación.'),
+        contenidoJson: contenidoEvaluacionSchema.describe(
+          'La evaluación completa: ítems con su desempeño real evaluado.',
+        ),
+      }),
+      execute: (args) => proponerEvaluacion(ctx, args),
     }),
   };
 }

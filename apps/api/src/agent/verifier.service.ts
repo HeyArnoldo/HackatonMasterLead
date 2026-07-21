@@ -1,7 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { In, Not, IsNull, Repository } from 'typeorm';
-import { ContenidoSesion, contenidoSesionSchema, MomentoNombre } from '@app/contracts';
+import {
+  ContenidoEvaluacion,
+  contenidoEvaluacionSchema,
+  ContenidoSesion,
+  contenidoSesionSchema,
+  MomentoNombre,
+} from '@app/contracts';
 import { Desempeno } from '../curriculum/desempeno.entity';
 
 export interface VerificationResult {
@@ -123,6 +129,27 @@ export function checkCitas(
 }
 
 /**
+ * Integridad de citas de una EVALUACIÓN: cada `desempenoCodigo` de cada ítem
+ * debe existir en `validCodigos`. Reusa la MISMA disciplina de citas que las
+ * sesiones (un código inventado invalida el examen).
+ */
+export function checkCitasEvaluacion(
+  contenido: ContenidoEvaluacion,
+  validCodigos: Set<string>,
+): { errors: string[]; invalidCodigos: string[] } {
+  const invalid = new Set<string>();
+  for (const item of contenido.items) {
+    if (!validCodigos.has(item.desempenoCodigo)) invalid.add(item.desempenoCodigo);
+  }
+  const invalidCodigos = [...invalid];
+  const errors = invalidCodigos.map(
+    (codigo) =>
+      `Cita inválida: el desempeño "${codigo}" no existe en el currículo para las competencias/grado de esta evaluación.`,
+  );
+  return { errors, invalidCodigos };
+}
+
+/**
  * Verificador (patrón Critic): valida el `contenidoJson` producido por la IA
  * ANTES de devolverlo/guardarlo. Garantiza que la sesión solo cite desempeños
  * REALES del currículo.
@@ -164,5 +191,32 @@ export class VerifierService {
     errors.push(...citas.errors);
 
     return { valid: errors.length === 0, errors, invalidCodigos: citas.invalidCodigos };
+  }
+
+  /**
+   * Verifica una EVALUACIÓN: estructura (schema) + integridad de citas de los
+   * ítems. Reusa `loadValidCodigos` (la misma consulta citable de las sesiones),
+   * garantizando que el examen no invente desempeños.
+   */
+  async verifyEvaluacion(
+    contenido: ContenidoEvaluacion,
+    ctx: VerificationCtx,
+  ): Promise<VerificationResult> {
+    const parsed = contenidoEvaluacionSchema.safeParse(contenido);
+    if (!parsed.success) {
+      const errors = parsed.error.issues.map(
+        (issue) =>
+          `Estructura inválida en ${issue.path.map(String).join('.') || '(raíz)'}: ${issue.message}`,
+      );
+      return { valid: false, errors, invalidCodigos: [] };
+    }
+
+    const validCodigos = await this.loadValidCodigos(ctx);
+    const citas = checkCitasEvaluacion(parsed.data, validCodigos);
+    return {
+      valid: citas.errors.length === 0,
+      errors: citas.errors,
+      invalidCodigos: citas.invalidCodigos,
+    };
   }
 }

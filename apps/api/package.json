@@ -13,7 +13,9 @@
     "migration:run": "typeorm-ts-node-commonjs migration:run -d src/config/typeorm.config.ts",
     "migration:revert": "typeorm-ts-node-commonjs migration:revert -d src/config/typeorm.config.ts",
     "seed": "ts-node src/database/seeds/run-seed.ts",
-    "test": "jest"
+    "seed:cneb": "ts-node src/database/seeds/run-cneb-seed.ts",
+    "test": "jest",
+    "test:db": "jest --testRegex \".*\\.db-spec\\.ts$\""
   },
   "dependencies": {
     "@app/contracts": "workspace:*",

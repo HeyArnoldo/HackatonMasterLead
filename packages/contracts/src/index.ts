@@ -5,3 +5,5 @@ export * from './escuela';
 export * from './sesion';
 export * from './copiloto';
 export * from './material';
+export * from './evaluacion';
+export * from './pdf';
